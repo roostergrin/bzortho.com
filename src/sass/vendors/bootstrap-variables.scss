@@ -11,8 +11,18 @@ $max-width: rem-calc(1235); // adjust to project
 
 // ------------------------
 
-//== Colors
-//
+// Colors
+$c1: #6ab2c8;
+$c2: #4a4a4a;
+$c3: #9b9b9b;
+$c4: #fcfcfb;
+$c5: #ffffff;
+$c6: #fdeb79;
+$c7: #6e6e6e;
+$c8: rgba(255, 255, 255, .5);
+$c9: #f8f8f8;
+$c10: rgba(50, 50, 50, .8);
+$c11: #f3f3f0;
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-base:              #000 !default;
