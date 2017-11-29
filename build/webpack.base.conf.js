@@ -59,7 +59,12 @@ module.exports = {
       },
       {
         test: /\.sass$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
+        include: [resolve('src'), resolve('test')]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif)(\?.*)?$/,

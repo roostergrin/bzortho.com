@@ -1,4 +1,4 @@
-.nav
+.nav(:class='classObject')
   .nav__bg
     .nav__container
       .nav__logo
@@ -7,7 +7,26 @@
             
       .nav__links
         .nav__link(v-for='link in links')
-          router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home"')
-            .nav__link-text 
+          router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home"', :title='link.name')
             | {{ link.name }}
+            
+      .nav__misc
+        .nav__phone
+          a(href="tel:+15106888465")
+            Icon(name='phone-icon')
+        .nav__appointment(@click='openModal')
+          a(title='Make Appointment')
+            | Make Appointment
+        .nav__login(@click='openLogin')
+          a(title='Log In')
+            | Log In 
+          .nav__chevron(:class='{ open: isOpen }')
+          .nav__login-container(:class='{ open: isOpen }')
+            .nav__log-link-2
+              a(href="" title='As Doctor') 
+                | As Doctor
+            .nav__log-link-1
+              a(href="" title='As Patient') 
+                | As Patient
+              
  

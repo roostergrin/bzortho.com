@@ -4,6 +4,8 @@ import Home from '@/pages/home/home'
 import AboutUs from '@/pages/about-us/about-us'
 import GetStarted from '@/pages/get-started/get-started'
 import Treatments from '@/pages/treatments/treatments'
+import Invisalign from '@/pages/invisalign/invisalign'
+import WildSmiles from '@/pages/wild-smiles/wild-smiles'
 import ContactUs from '@/pages/contact-us/contact-us'
 import PageNotFound from '@/pages/404/404'
 
@@ -19,18 +21,28 @@ const router = new VueRouter({
     },
     {
       path: '/about-us',
-      name: 'about-us',
+      name: 'About Us',
       component: AboutUs
     },
     {
       path: '/get-started',
-      name: 'get started',
+      name: 'Getting Started',
       component: GetStarted
     },
     {
       path: '/treatments',
-      name: 'treatments',
+      name: 'Treatments',
       component: Treatments
+    },
+    {
+      path: '/invisalign',
+      name: 'Invisalign',
+      component: Invisalign
+    },
+    {
+      path: '/wild-smiles',
+      name: 'Wild Smiles',
+      component: WildSmiles
     },
     {
       path: '/Contact-us',
