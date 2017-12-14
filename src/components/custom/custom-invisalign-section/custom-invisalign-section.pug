@@ -1,0 +1,10 @@
+.custom-invisalign-section
+  .custom-invisalign-section__container
+    .custom-invisalign-section__body
+      .custom-invisalign-section__image-bg
+        .custom-invisalign-section__image(:style="{ backgroundImage: 'url('+ props.image +')' }")
+        .custom-invisalign-section__image-text
+          | {{ props.image_text }}
+      .custom-invisalign-section__textarea(v-html='props.content')
+        
+  

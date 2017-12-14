@@ -4,6 +4,8 @@
 import Loader from 'components/loader/loader'
 import Hero from 'components/Hero/Hero'
 import Icon from 'components/icon/icon'
+import NavTrigger from 'components/Nav/custom-nav-trigger/custom-nav-trigger'
+import CustomInvisalignSection from 'components/custom/custom-invisalign-section/custom-invisalign-section'
 
 export default {
   name: 'get-started',
@@ -15,10 +17,15 @@ export default {
       return this.$store.state.loading
     }
   },
+  created () {
+
+  },
   components: {
     Loader,
     Hero,
-    Icon
+    Icon,
+    NavTrigger,
+    CustomInvisalignSection
   }
 }
 </script>

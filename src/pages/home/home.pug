@@ -30,8 +30,8 @@
         .body
           | {{ item.body }}
     .pages-home__slider(v-if='props.acf.section_2')
-      BlockSlider(:props='props.acf')
-        Slider
+      //- BlockSlider(:props='props.acf')
+        //- Slider
           SliderItem(v-for="(i, index) in list.acf.section_2.slider", :id='index', :key="index")
             .slider-text__body
               | a

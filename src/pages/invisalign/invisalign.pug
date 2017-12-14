@@ -1,0 +1,7 @@
+.pages-invisalign
+  div(v-if='props')
+    //- NavTrigger
+    Hero(:props='props.acf.hero')
+      //- pre {{ props }}
+    CustomInvisalignSection(:props='props.acf.custom_invisalign_section')
+  

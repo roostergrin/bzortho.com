@@ -3,6 +3,9 @@
 <script>
 export default {
   props: ['props'],
+  created () {
+    console.log('ksdlfksj')
+  },
   methods: {
     isScrolled () {
       this.$store.dispatch('VIEW_NAV', 1)

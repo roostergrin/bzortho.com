@@ -35,7 +35,7 @@ export default {
   },
   mounted () {
     this.list = this.props
-    console.log(this.list)
+    // console.log(this.list)
   }
 }
 </script>
