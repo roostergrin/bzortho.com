@@ -2,6 +2,14 @@
 
 <script>
 export default {
-  props: ['props']
+  props: ['props'],
+  data () {
+    return {
+      list: []
+    }
+  },
+  created () {
+    this.list = this.props
+  }
 }
 </script>

@@ -76,6 +76,9 @@
         overflow: hidden
         font-weight: bold
         content: attr(title)
+      &.open
+        color: $c7
+        font-weight: 700
     &:first-child,
     &:last-child
       display: none
@@ -101,18 +104,22 @@
 
   &__appointment
     float: left
-    padding: 2rem 1rem
+    padding: 2rem .75rem
     a
       display: block
       float: left
+      outline: 2px solid $c7
       cursor: pointer
+      padding: 0 .25rem
       text-align: center
       text-decoration: none
       line-height: 2rem
-      color: $c1
+      color: $c7
       font-family: $font-family-sans-serif-option
+      font-weight: 700
       &:hover
-        color: $c7
+        background: $c7
+        color: $c8
         font-weight: 700
       &:after
         display: block
@@ -145,6 +152,9 @@
         height: 0
         overflow: hidden
         font-weight: bold
+      &.open
+        color: $c7
+        font-weight: 700
     &:hover
       a
         color: $c7
@@ -180,6 +190,7 @@
     &.open
       bottom: 45%
       transform: rotate(135deg)
+      border-color: $c7
   &__log-link-1
     float: right
     a
@@ -201,8 +212,8 @@
 
   &__log-link-2
     position: relative
-    padding-left: 1rem
     float: right
+    padding-left: 1rem
     a
       display: block
       float: left

@@ -1,4 +1,41 @@
 .pages-home
   Loader(v-show='loading')
   div(v-if='props')
+    NavTrigger
+      Hero(:props='props.acf.hero')
+    .pages-home__section-1
+      .pages-home__title
+        BlockBox
+          .block-header(slot='header')
+            | {{ props.acf.header.title }}
+          .block-body(slot='body' v-html='props.acf.header.body')
+            | {{ props.acf.header.body }}
+      .pages-home__title-body
+        BlockBox
+          .block-header-body(slot='body' v-html='props.acf.title.body')
+            | {{ props.acf.title.body }}
+    .pages-home__section-2
+      .pages-home__section-2-title
+        BlockBox
+          .block-section-2-t-content
+            | {{ props.acf.section_1.title }}
+      .pages-home__section-2-body
+        BlockBox
+          .block-section-2-b-content
+            | {{ props.acf.section_1.body }}
+      .pages-home__section-2-repeater(v-for='item in props.acf.section_1.repeater')
+        .icon(:style="{ backgroundImage: 'url('+ item.icon +')'}")
+        .title
+          | {{ item.title }}
+        .body
+          | {{ item.body }}
+    .pages-home__slider(v-if='props.acf.section_2')
+      BlockSlider(:props='props.acf')
+        Slider
+          SliderItem(v-for="(i, index) in list.acf.section_2.slider", :id='index', :key="index")
+            .slider-text__body
+              | a
+            
     pre {{ props }}
+      
+      

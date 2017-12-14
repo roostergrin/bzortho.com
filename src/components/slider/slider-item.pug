@@ -1,0 +1,4 @@
+.slider-item(v-if='show' @click='onClick')
+  transition(v-bind:css='false', @beforeenter='beforeEnter', @enter='enter', @leave='leave')
+    .wrap(v-if='animate')
+      slot

@@ -18,8 +18,8 @@
           a(title='Make Appointment')
             | Make Appointment
         .nav__login(@click='openLogin')
-          a(title='Log In')
-            | Log In 
+          a(title='Log In', :class='{ open: isOpen }')
+            | Log In
           .nav__chevron(:class='{ open: isOpen }')
           .nav__login-container(:class='{ open: isOpen }')
             .nav__log-link-2
