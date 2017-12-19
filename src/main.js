@@ -9,7 +9,7 @@ import store from './shared/store'
 // import VueCookies from 'vue-cookies'
 // import VueParallaxJs from 'vue-parallax-js'
 // import VueScrollTo from 'vue-scrollto'
-// import VueWaypoint from 'vue-waypoint'
+import VueWaypoint from 'vue-waypoint'
 
 // Vue config
 Vue.config.productionTip = false
@@ -33,7 +33,7 @@ Vue.use(VeeValidate)
 //   y: true
 // })
 // Vue.use(VueParallaxJs, { minWidth: 1024 })
-// Vue.use(VueWaypoint)
+Vue.use(VueWaypoint)
 
 // Vue.use(VueCookies)
 
