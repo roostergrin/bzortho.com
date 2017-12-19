@@ -7,21 +7,22 @@ $bootstrap-sass-asset-helper: false !default;
 // Project Globals
 
 // grid
-$max-width: rem-calc(1235); // adjust to project
+$max-width: rem-calc(1330); // adjust to project
+// 18 col grid no gutters
 
 // ------------------------
 
 // Colors
-$c1: #0f2d3b;
-$c2: #41667b;
-$c3: #6089a2;
-$c4: #669dac;
-$c5: #bfd2d9;
-$c6: #a4d4d9;
-$c7: #00b2c7;
-$c8: #ffffff;
-$c9: #f7f7f7;
-$c10: #f6f6f6;
+$c1: #0f2d3b; // dark-blue-grey
+$c2: #41667b; // metallic-blue
+$c3: #6089a2; // greyish-blue
+$c4: #669dac; // grey-blue
+$c5: #bfd2d9; // cloudy-blue
+$c6: #a4d4d9; // light-grey-blue
+$c7: #00b2c7; // turquoise-blue
+$c8: #ffffff; // white
+$c9: #f7f7f7; // off-white
+$c10: #f6f6f6; // off-white-2
 $c11: rgba(255, 255, 255, .75);
 $c12: rgba(50, 50, 50, .8);
 //## Gray and brand colors for use across Bootstrap.
@@ -345,7 +346,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //## Define your custom responsive grid.
 
 //** Number of columns in the grid.
-$grid-columns:              12 !default;
+$grid-columns:              18 !default;
 //** Padding between columns. Gets divided in half for the left and right.
 $grid-gutter-width:         30px !default;
 // Navbar collapse

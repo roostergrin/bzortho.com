@@ -1,3 +1,13 @@
 .block-text-box
-  slot(name='header')
-  slot(name='body')
+  .block-text-box__container
+    .block-text-box__bg
+      .block-text-box__col.block-text-box__col--left
+        .block-text-box__body
+          .block-text-box__title
+            slot(name='header')
+          .block-text-box__subtitle 
+            slot(name='subheader')
+
+      .block-text-box__col.block-text-box__col--right  
+        .block-text-box__body
+          slot(name='body')

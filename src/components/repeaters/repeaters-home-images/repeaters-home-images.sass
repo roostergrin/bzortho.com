@@ -1,0 +1,22 @@
+.repeaters-home-images
+  &__container
+    @extend .container-fluid
+
+  &__images
+    height: 200px
+
+    &:nth-child(1)
+      @extend .col-sm-offset-2
+
+  &__image-container
+    @extend .col-sm-3
+    position: relative
+    height: 100%
+
+  &__image
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    img
+      width: 100%

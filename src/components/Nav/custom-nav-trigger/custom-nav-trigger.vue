@@ -4,7 +4,7 @@
 export default {
   props: ['props'],
   created () {
-    console.log('ksdlfksj')
+    // console.log('ksdlfksj')
   },
   methods: {
     isScrolled () {

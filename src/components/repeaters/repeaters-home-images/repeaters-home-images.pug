@@ -1,0 +1,6 @@
+.repeaters-home-images
+  .repeaters-home-images__container
+    .repeaters-home-images__images
+      .repeaters-home-images__image-container(v-for='image in props')
+        .repeaters-home-images__image
+          img(:src='image.icon')

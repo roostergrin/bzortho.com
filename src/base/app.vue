@@ -4,7 +4,7 @@
 // components
 import NavDesktop from 'components/Nav/Nav'
 import NavMobile from 'components/Nav/Nav-Mobile/Nav-Mobile'
-import FooterDesktop from 'components/Footer/Footer'
+import FooterDesktop from 'components/footer/footer'
 import Modal from 'components/custom/custom-modal-multitool/custom-modal-multitool'
 
 export default {
