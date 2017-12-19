@@ -2,7 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
-import NavTrigger from 'components/Nav/custom-nav-trigger/custom-nav-trigger'
+import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import BlockBox from 'components/block/block-text-box/block-text-box'
 import BlockSlider from 'components/block/block-slider-container/block-slider-container'
 import Hero from 'components/Hero/Hero'
