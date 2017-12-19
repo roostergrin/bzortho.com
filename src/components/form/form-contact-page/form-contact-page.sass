@@ -1,0 +1,33 @@
+.form-contact-page
+
+  &__group
+    margin-bottom: rem-calc(26)
+
+    &--checkboxes
+      @extend %p2
+      input, label
+        margin-right: rem-calc(12)
+        color: $c3
+        font-family: $font-family-sans-serif-option
+
+      input
+        border: 2px solid $c7
+
+    &--submit
+      text-align: center
+
+  &__input
+    @extend %p3
+    border: 2px solid $c7
+    padding: rem-calc(11) rem-calc(24)
+    width: 100%
+    font-family: $font-family-sans-serif-option
+
+  &__submit
+    display: inline-block
+    border: none
+    background-color: $c7
+    width: 60%
+    height: rem-calc(40)
+    letter-spacing: 4px
+    color: $c8
