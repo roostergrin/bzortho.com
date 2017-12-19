@@ -4,7 +4,6 @@
 import Icon from 'components/icon/icon'
 
 export default {
-  // props: ['props'],
   computed: {
     classObject () {
       return {
@@ -14,6 +13,11 @@ export default {
     },
     props () {
       return this.$store.state.pages.app
+    },
+    phone () {
+      const reg = /\d+/g
+      let phone = this.$store.state.pages.app.acf.app.footer.phone
+      return 'tel:+1' + phone.match(reg).join('')
     }
   },
   components: {
