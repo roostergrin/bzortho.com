@@ -1,0 +1,20 @@
+.custom-about-us-doctor
+  .custom-about-us-doctor__container
+    .custom-about-us-doctor__col.custom-about-us-doctor__col--left
+      .custom-about-us-doctor__image(:style="{backgroundImage: 'url('+ props.image +')'}")
+      
+      .custom-about-us-doctor__section
+        .custom-about-us-doctor__section-title
+          | {{ props.column_left.title }}
+        .custom-about-us-doctor__section-content(v-html='props.column_left.content')
+          
+      
+    .custom-about-us-doctor__col.custom-about-us-doctor__col--right  
+      .custom-about-us-doctor__section(v-for='section in props.column_right')
+        .custom-about-us-doctor__icon
+          object(:data='section.icon' type='image/svg+xml')
+        .custom-about-us-doctor__textarea    
+          .custom-about-us-doctor__section-title
+            | {{ section.title }}
+          .custom-about-us-doctor__section-content(v-html='section.content')
+      

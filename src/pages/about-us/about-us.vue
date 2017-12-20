@@ -3,6 +3,8 @@
 <script>
 import Loader from 'components/loader/loader'
 import Hero from 'components/Hero/Hero'
+import BlockBox from 'components/block/block-text-box/block-text-box'
+import CustomAboutUsDoctor from 'components/custom/custom-about-us-doctor/custom-about-us-doctor'
 
 export default {
   name: 'about-us',
@@ -14,12 +16,11 @@ export default {
       return this.$store.state.loading
     }
   },
-  mounted () {
-    console.log(this.props)
-  },
   components: {
     Loader,
-    Hero
+    Hero,
+    BlockBox,
+    CustomAboutUsDoctor
   }
 }
 </script>

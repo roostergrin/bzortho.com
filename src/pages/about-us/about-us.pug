@@ -1,5 +1,17 @@
 .pages-about-us
   Loader(v-if='loading')
-  div(v-if='!loading')
+  div(v-if='props')
     Hero(:props='props.acf.hero')
-    pre {{ props }}
+      
+    .pages-about-us__section-1
+      .pages-about-us__title
+        BlockBox(v-if='props.acf.header')
+          .block-header(slot='header')
+            | {{ props.acf.header.title }}
+          .block-subheader(slot='subheader')  
+            | {{ props.acf.header.sub_title }}
+          .block-body(slot='body' v-html='props.acf.header.body')
+            | {{ props.acf.header.body }}  
+            
+    CustomAboutUsDoctor(:props='props.acf.custom_about_us_doctor')        
+    
