@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import Hero from 'components/Hero/Hero'
 
 export default {
   name: 'about-us',
@@ -13,8 +14,12 @@ export default {
       return this.$store.state.loading
     }
   },
+  created () {
+    console.log(this.props)
+  },
   components: {
-    Loader
+    Loader,
+    Hero
   }
 }
 </script>
