@@ -26,6 +26,8 @@
 
   &__title
     @extend h1
+    @extend .col-sm-16
+    @extend .col-sm-offset-2
     text-transform: uppercase
     color: $c2
 
@@ -41,6 +43,7 @@
       text-align: center
 
   &__body
+    @extend .col-sm-16
     @extend %p1
     position: absolute
     top: 50%
