@@ -13,16 +13,26 @@
             | {{ props.acf.header.sub_title }}
           .block-body(slot='body' v-html='props.acf.header.body')
             | {{ props.acf.header.body }}
-    
     CustomSectionHome(:props='props.acf.section_1')
-    RepeaterTabsHome(:props='props.acf.repeater_tabs_home')
+    RepeaterTabsHome(:props='props.acf.section_1.repeater')
     .pages-home__slider
-      Slider(:content='props')
+      .title-box
+      .title
+        | {{ props.acf.section_2.slider_title }}
+      .subtitle
+        | {{ props.acf.section_2.slider_subtitle }}
+      .arrow
+      Slider
         SliderItem(slot='item' v-for="(index, i) in props.acf.section_2.slider", :key='index')
-          
-          .slider-text__body
+          .icon
+            object(:data='index.icon' type='image/svg+xml')
+          .body
             | {{ index.body }}
-          .slider-text__body
+          .author
             | {{ index.author }}
+        .button-left(slot='button-left')
+          object(:data='props.acf.section_2.btn_left' type='image/svg+xml')
+        .button-right(slot='button-right')
+          object(:data='props.acf.section_2.btn_right' type='image/svg+xml')
   
     RepeatersHomeImages(:props='props.acf.icon_bar')

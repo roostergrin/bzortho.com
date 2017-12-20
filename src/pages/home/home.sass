@@ -23,3 +23,84 @@
   .hero__subtext
     @extend %hero
     color: $c8
+  &__title
+    .block-text-box__bg
+      background-color: $c9
+  &__slider
+    @extend .container-fluid
+    padding: 0
+    max-width: none
+    .title-box
+      @extend .col-sm-6
+      position: absolute
+      top: 2.5rem
+      background: $c5
+      height: 15rem
+
+    .title,
+    .subtitle
+      @extend .col-sm-offset-1
+      position: absolute
+      z-index: 999
+      text-transform: uppercase
+
+      @media screen and (max-width: $screen-sm)
+        text-align: center
+
+    .title
+      @extend h1
+      @extend .col-sm-4
+      top: 4rem
+      color: $c1
+
+    .subtitle
+      @extend h2
+      @extend .col-sm-4
+      top: 10rem
+      margin-left: calc(100% / 18)
+      color: $c8
+      font-size: rem-calc(18)
+
+      @media (min-width: 1024px) and (max-width: 1280px)
+        width: calc(100% * 5 / 18)
+
+    .slider
+      @extend .col-sm-13
+      @extend .col-sm-offset-4
+      border: 2px solid $c5
+      height: 20rem
+      .wrap
+        @extend .clearfix
+      .slider-item
+        @extend .col-sm-14
+        @extend .col-sm-offset-4
+
+      .btn-left,
+      .btn-right
+        top: 13.5rem
+        z-index: 999
+        background: transparent
+        width: 4rem
+        height: 1rem
+
+        @media (min-width: 1024px) and (max-width: 1280px)
+          width: 3.25rem
+
+      .btn-left
+        left: 1rem
+      .btn-right
+        left: 5rem
+        transform: rotate(180deg) translateY(-5px)
+
+        @media (min-width: 1024px) and (max-width: 1280px)
+          left: 3.5rem
+          transform: rotate(180deg) translateY(-3px)
+      .body
+        margin-bottom: 3rem
+      .author
+        margin-bottom: 3rem
+        text-align: right
+        font-style: italic
+      .icon
+        margin: 2rem auto
+        width: 7rem
