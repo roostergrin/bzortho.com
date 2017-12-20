@@ -1,0 +1,22 @@
+.form-contact-page
+  .form-contact-page__container
+    .form-contact-page__success-message(v-if='formSubmitted')
+      | Thanks for submitting our form.
+      | Someone will reach out to you as soon as possible!
+    form.form-contact-page__form(@submit.prevent='validateBeforeSubmit', v-if='!formSubmitted')
+      .form-contact-page__group
+        input.form-contact-page__input(name='name', v-model='name', :validate="'required|alpha_spaces'", type='text', placeholder='Your Full Name')
+      .form-contact-page__group.form-contact-page__group--checkboxes
+        label First Time Patient? 
+        input.form-contact-page__checkbox(name='yes', type='checkbox', value='Yes') 
+        label Yes
+        input.form-contact-page__checkbox(name='no', type='checkbox', value='No') 
+        label No
+      .form-contact-page__group
+        input.form-contact-page__input(name='email', v-model='email', :validate="'required'", type='text', placeholder='Your Email')    
+      .form-contact-page__group
+        input.form-contact-page__input(name='phone', v-model='phone', :validate="'required'", type='text', placeholder='Your Phone Number')
+      .form-contact-page__group
+        textarea.form-contact-page__input(name='message', v-model='message', :validate="'required'", type='text', placeholder='Message', rows='5')    
+      .form-contact-page__group.form-contact-page__group--submit
+        input.form-contact-page__submit(name='submit', type='submit', value='SUBMIT REQUEST')

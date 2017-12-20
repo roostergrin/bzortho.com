@@ -2,9 +2,10 @@
 
 <script>
 export default {
+  name: 'Trigger',
   props: ['props'],
   created () {
-    console.log('ksdlfksj')
+    // console.log('ksdlfksj')
   },
   methods: {
     isScrolled () {

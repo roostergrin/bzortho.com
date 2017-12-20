@@ -1,4 +1,25 @@
 .footer
-  .footer__col
-  .footer__col
-  .footer__col
+  .footer__container(v-if='props')
+    .footer__textarea
+      .footer__location
+        .footer__position(v-html='props.acf.app.footer.location')
+        
+      .footer__phone
+        .footer__position
+          a(:href='phone')
+            | {{ props.acf.app.footer.phone }}  
+      
+      .footer__social-media
+        .footer__social-text
+          .footer__position
+            | {{ props.acf.app.footer.social_media_intro }}
+        .footer__icons
+          .footer__position
+            .footer__icon(v-for='icon in props.acf.app.footer.social_media')
+              a(:href='icon.link')
+                div
+                  object(:data='icon.icon' type='image/svg+xml')
+          
+      .footer__rooster(v-html='props.acf.app.footer.rooster')
+        
+  //-- TODO: Make Mobile Footer

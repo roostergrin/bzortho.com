@@ -1,0 +1,6 @@
+.pages-contact-us
+  Loader(v-show='loading')
+  div(v-if='props')
+    .pages-contact-us__body
+      CustomContactIntro(:props='props.acf')
+      CustomContactBody(:props='props')

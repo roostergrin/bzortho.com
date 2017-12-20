@@ -1,0 +1,47 @@
+.block-text-box
+
+  &__bg
+    background-color: $c5
+    height: 100%
+
+    &:after
+      display: table
+      clear: both
+      content: ''
+
+  &__col
+    height: 200px
+
+    @media screen and (max-width: $screen-sm)
+      height: 250px
+
+    &--left
+      @extend .col-sm-6
+      @extend .col-sm-offset-1
+
+    &--right
+      @extend .col-sm-11
+      background-color: $c8
+      height: 200px
+
+  &__title
+    @extend h1
+    text-transform: uppercase
+    color: $c2
+
+    @media screen and (max-width: $screen-sm)
+      text-align: center
+
+  &__subtitle
+    @extend h2
+    text-transform: uppercase
+    color: $c7
+
+    @media screen and (max-width: $screen-sm)
+      text-align: center
+
+  &__body
+    @extend %p1
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)

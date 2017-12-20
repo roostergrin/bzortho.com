@@ -1,0 +1,28 @@
+.repeaters-tabs-home
+  &__container
+    @extend .container-fluid
+    padding-bottom: rem-calc(64)
+
+  &__cards
+    &:nth-child(1)
+      @extend .col-sm-offset-1
+
+  &__card
+    @extend .col-sm-4
+    text-align: center
+
+  &__icon
+    display: inline-block
+    margin-bottom: rem-calc(24)
+    background-color: $c1
+    width: 94px
+    height: 94px
+
+  &__title
+    @extend h4
+    margin-bottom: rem-calc(40)
+    text-transform: uppercase
+    color: $c7
+
+  &__content
+    @extend %p3
