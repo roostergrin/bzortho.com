@@ -1,22 +1,26 @@
 .repeaters-home-images
   &__container
     @extend .container-fluid
+    max-width: none
 
   &__images
     height: 200px
 
     &:nth-child(1)
-      @extend .col-sm-offset-2
+      @extend .col-sm-offset-1
 
   &__image-container
     @extend .col-sm-3
     position: relative
+    width: 19.5%
     height: 100%
 
   &__image
     position: absolute
     top: 50%
-    transform: translateY(-50%)
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    width: 70%
 
     img
       width: 100%

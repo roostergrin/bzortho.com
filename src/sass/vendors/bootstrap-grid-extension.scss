@@ -53,6 +53,14 @@
   max-width: $max-width;
 }
 
+.clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
 .rg-row {
   @include make-row;
 }
