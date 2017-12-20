@@ -2,8 +2,8 @@
 
 <script>
 // components
-import NavDesktop from 'components/Nav/Nav'
-import NavMobile from 'components/Nav/Nav-Mobile/Nav-Mobile'
+import NavDesktop from 'components/nav/nav'
+import NavMobile from 'components/nav/Nav-Mobile/Nav-Mobile'
 import FooterDesktop from 'components/footer/footer'
 import Modal from 'components/custom/custom-modal-multitool/custom-modal-multitool'
 
