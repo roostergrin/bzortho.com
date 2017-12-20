@@ -22,10 +22,7 @@ function rg_serve_route () {
   // $message .= 'Email: ' . $data['email'] . "\r\n";
   // $message .= 'Phone: ' . $data['phone'] . "\r\n";
 
-  $message = 'Form Submission by: ' . $data['firstname'] . ' ' . $data['lastname'] . '
-    <p>Testing</p>
-    <h2>Tester</h2>
-  '
+  $message = 'Form Submission by: ' . $data['firstname'] . ' ' . $data['lastname'] . "\r\n";
 
   $sent_message = wp_mail($to, $subject, $message, $headers);
 

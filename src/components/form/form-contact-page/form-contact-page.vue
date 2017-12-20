@@ -28,12 +28,15 @@ export default {
         alert('Correct them errors!')
       })
     },
-    onSubmit (e) {
+    onSubmit: function (e) {
       axios.post(api + '/rg-mail/v1/contact-page', {
         name: this.name,
         email: this.email,
         phone: this.phone,
         message: this.message
+      })
+      .then(res => {
+        console.log(res)
       })
       .catch(e => {
         console.log('Form Error: ' + e)

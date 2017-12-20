@@ -1,3 +1,6 @@
 .custom-contact-column
   .custom-contact-column__container
-    | Custom Contact Column
+    .custom-contact-column__section(v-for='section in props.acf.custom_contact_column.sections')
+      .custom-contact-column__title
+        | {{ section.title }}
+      .custom-contact-column__content(v-html='section.content')
