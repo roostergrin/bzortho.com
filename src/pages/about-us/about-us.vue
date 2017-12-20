@@ -14,7 +14,7 @@ export default {
       return this.$store.state.loading
     }
   },
-  created () {
+  mounted () {
     console.log(this.props)
   },
   components: {
