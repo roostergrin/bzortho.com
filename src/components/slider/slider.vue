@@ -4,6 +4,7 @@
   import { throttle, debounce } from './utils'
 
   export default {
+    content: ['content'],
     data () {
       return {
         children: [],
@@ -127,6 +128,7 @@
       this.handleItemChange = throttle(this.updateItems, 100)
       this.jump = debounce(this.jump, this.speed + 100)
       this.children = this.$parent.props
+      console.log(this.content)
     },
     beforeMount () {
       this.handleItemChange()

@@ -16,26 +16,13 @@
     
     CustomSectionHome(:props='props.acf.section_1')
     RepeaterTabsHome(:props='props.acf.repeater_tabs_home')
-    //- .pages-home__section-2
-    //-   .pages-home__section-2-title
-    //-     BlockBox
-    //-       .block-section-2-t-content
-    //-         | {{ props.acf.section_1.title }}
-    //-   .pages-home__section-2-body
-    //-     BlockBox
-    //-       .block-section-2-b-content
-    //-         | {{ props.acf.section_1.body }}
-    //-   .pages-home__section-2-repeater(v-for='item in props.acf.section_1.repeater')
-    //-     .icon(:style="{ backgroundImage: 'url('+ item.icon +')'}")
-    //-     .title
-    //-       | {{ item.title }}
-    //-     .body
-    //-       | {{ item.body }}
-    //- .pages-home__slider(v-if='props.acf.section_2')
-      //- BlockSlider(:props='props.acf')
-        //- Slider
-          SliderItem(v-for="(i, index) in list.acf.section_2.slider", :id='index', :key="index")
-            .slider-text__body
-              | a
+    .pages-home__slider
+      Slider(:content='props')
+        SliderItem(slot='item' v-for="(index, i) in props.acf.section_2.slider", :key='index')
+          
+          .slider-text__body
+            | {{ index.body }}
+          .slider-text__body
+            | {{ index.author }}
   
     RepeatersHomeImages(:props='props.acf.icon_bar')
