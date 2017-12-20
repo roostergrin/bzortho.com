@@ -1,4 +1,4 @@
-<template lang='pug' src='./Nav.pug'></template>
+<template lang='pug' src='./nav.pug'></template>
 
 <script>
 import Icon from 'components/icon/icon'
