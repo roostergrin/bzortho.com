@@ -27,7 +27,8 @@
     padding: 2rem 0
   .segment-1,
   .segment-2,
-  .segment-3
+  .segment-3,
+  .segment-4
     @extend .clearfix
     @extend .col-sm-offset-1
     @extend .col-sm-10
@@ -52,3 +53,19 @@
     .segment-2
       .block-treatments-body__title
         padding-bottom: 1rem
+
+  .section-3
+    .segment-3
+      @extend .col-sm-offset-1
+      @extend .col-sm-8
+      .block-treatments-image
+        &__container
+          height: 17rem
+    .segment-5
+      @extend .col-sm-18
+      padding-top: 2rem
+      padding-bottom: 2rem
+      .sub-segment-1
+        @extend .col-sm-10
+      .sub-segment-2
+        @extend .col-sm-7

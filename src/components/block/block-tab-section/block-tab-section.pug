@@ -1,7 +1,7 @@
 .block-tab-section
   .block-tab-section__container
     .block-tab-section__tabs
-      .block-tab-section__tab(v-for='(tabs, i) in props.tabs', :key='tabs')
+      .block-tab-section__tab(v-for='(tabs, i) in props', :key='tabs' @click='switchTab(i, tabs.body)', :class ='{ active: i === $store.state.body }')
         | {{ tabs.tab }}
-      .block-tab-section__body
-        | {{ props.cache }}
+    .block-tab-section___body
+      | {{ body }}
