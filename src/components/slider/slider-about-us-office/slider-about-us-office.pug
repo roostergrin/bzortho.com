@@ -1,0 +1,7 @@
+.slider-about-us-office
+  .slider-about-us-office__container
+    .slider-about-us-office__title
+      | {{ props.title }}
+    .slider-about-us-office__slider
+      .slider-about-us-office__slides(v-slider-about-us-office-directive='')
+        .slider-about-us-office__slide(v-for='(slide, i) in props.slides', :style="{backgroundImage: 'url('+ slide.url +')'}")

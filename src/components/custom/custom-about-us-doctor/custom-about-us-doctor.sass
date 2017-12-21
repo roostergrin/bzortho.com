@@ -1,0 +1,48 @@
+.custom-about-us-doctor
+
+  &__container
+    @extend .container-fluid
+    padding-top: rem-calc(32)
+
+  &__col
+    &--left
+      @extend .col-sm-6
+
+    &--right
+      @extend .col-sm-12
+
+  &__image
+    @extend .col-sm-14
+    margin-bottom: rem-calc(32)
+    background-size: cover
+    height: 400px
+
+  &__section
+    @extend .col-sm-18
+    margin-bottom: rem-calc(32)
+
+    @media screen and (max-width: $screen-sm)
+      padding: 0
+      text-align: center
+
+    .custom-about-us-doctor__col--left &
+      padding: 0
+
+  &__icon
+    @extend .col-sm-1
+
+    object
+      width: rem-calc(33)
+
+  &__textarea
+    @extend .col-sm-17
+
+  &__section-title
+    @extend h3
+    margin-bottom: rem-calc(16)
+    text-transform: uppercase
+
+  &__section-content
+    @extend %p1
+    text-transform: uppercase
+    color: $c7
