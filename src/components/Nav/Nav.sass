@@ -1,7 +1,7 @@
 // functions
 @keyframes moveIn
   from
-    transform: perspective(20px) translate3d(0, -5rem, 10px)
+    transform: translate3d(0, -6rem, 10px)
   to
     transform: translate3d(0, 0, 0)
 
@@ -9,7 +9,7 @@
   from
     transform: translate3d(0, 0, 0)
   to
-    transform: perspective(20px) translate3d(0, -5rem, 10px)
+    transform: translate3d(0, -6rem, 10px)
 
 // static
 .nav
@@ -20,10 +20,10 @@
   background: $c11
   width: 100%
   &.scrolled
-    animation: moveOut .5s ease-in forwards
+    animation: moveOut .35s ease-in forwards
 
   &.reset
-    animation: moveIn .5s ease-in forwards
+    animation: moveIn .35s ease-in forwards
 
   @media screen and (min-width: $screen-sm)
     display: block

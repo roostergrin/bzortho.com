@@ -1,3 +1,20 @@
 .pages-treatments
   Loader(v-show='loading')
   div(v-if='props')
+    NavTrigger
+      Hero(:props='props.acf.hero')
+    .section-1
+      TreatTitle(:props='props.acf.kids')
+      TreatBody.segment-1(:props='props.acf.kids.section_1')
+      TreatBody.segment-2(:props='props.acf.kids.section_2')
+      TreatBody.segment-3(:props='props.acf.kids.section_3')
+    .section-3
+      TreatTitle(:props='props.acf.teens')
+      TabsSection(:props='props.acf.teens.tabs')
+      TreatBody.segment-1(:props='props.acf.teens.section_2')
+      TreatBody.segment-2(:props='props.acf.teens.invisalign')
+    .section-2
+      TreatTitle(:props='props.acf.adults')
+      TreatBody.segment-1(:props='props.acf.adults.section_1')
+      TreatBody.segment-2(:props='props.acf.adults.section_2')
+      TreatBody.segment-3(:props='props.acf.adults.section_3')

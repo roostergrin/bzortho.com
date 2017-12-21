@@ -2,7 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
-import Hero from 'components/Hero/Hero'
+import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import CustomInvisalignSection from 'components/custom/custom-invisalign-section/custom-invisalign-section'

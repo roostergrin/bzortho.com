@@ -1,0 +1,7 @@
+.block-tab-section
+  .block-tab-section__container
+    .block-tab-section__tabs
+      .block-tab-section__tab(v-for='(tabs, i) in props.tabs', :key='tabs')
+        | {{ tabs.tab }}
+      .block-tab-section__body
+        | {{ props.cache }}
