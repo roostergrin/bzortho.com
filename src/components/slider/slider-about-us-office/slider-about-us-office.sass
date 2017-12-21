@@ -1,0 +1,21 @@
+.slider-about-us-office
+  &__container
+    @extend .container-fluid
+
+  &__title
+    @extend h1
+    text-align: center
+    text-transform: uppercase
+
+  &__slider
+    @extend .col-sm-16
+    @extend .col-sm-offset-1
+
+  &__slide
+    background-position: center center
+    background-size: cover
+    height: 500px
+
+  .slick-prev, .slick-next
+    &:before
+      color: $c2

@@ -12,7 +12,7 @@
     .custom-about-us-doctor__col.custom-about-us-doctor__col--right  
       .custom-about-us-doctor__section(v-for='section in props.column_right')
         .custom-about-us-doctor__icon
-          object(:data='section.icon' type='image/svg+xml')
+          object(:data='section.icon', type='image/svg+xml', v-if='section.icon')
         .custom-about-us-doctor__textarea    
           .custom-about-us-doctor__section-title
             | {{ section.title }}

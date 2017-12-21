@@ -1,0 +1,54 @@
+.slider-about-us-team
+  &__container
+    @extend .container-fluid
+    position: relative
+
+  &__title
+    @extend .col-sm-6
+    @extend h2
+    text-transform: uppercase
+
+  &__top
+    @extend .col-sm-10
+    position: absolute
+    top: -115px
+    right: 24px
+
+    @media screen and (max-width: $screen-sm)
+      position: relative
+      top: 0
+      right: 0
+
+  &__bottom
+    @extend .col-sm-18
+    margin-top: 200px
+
+    @media screen and (max-width: $screen-sm)
+      margin-top: 0
+
+  &__slides
+    transform: translateY(25px)
+    // height: 225px
+
+  &__slide-content
+    transform: translateY(25px)
+    margin: 1em
+    background-color: $c3
+    height: 150px
+
+    &--active
+      transform: none
+      height: 200px
+
+      @media screen and (max-width: $screen-sm)
+        height: 150px
+
+  &__card
+    display: none
+
+    &--active
+      display: block
+
+  .slick-prev, .slick-next
+    &:before
+      color: $c2

@@ -5,6 +5,8 @@ import Loader from 'components/loader/loader'
 import Hero from 'components/Hero/Hero'
 import BlockBox from 'components/block/block-text-box/block-text-box'
 import CustomAboutUsDoctor from 'components/custom/custom-about-us-doctor/custom-about-us-doctor'
+import CustomAboutUsTeam from 'components/custom/custom-about-us-team/custom-about-us-team'
+import SliderAboutUsOffice from 'components/slider/slider-about-us-office/slider-about-us-office'
 
 export default {
   name: 'about-us',
@@ -20,7 +22,9 @@ export default {
     Loader,
     Hero,
     BlockBox,
-    CustomAboutUsDoctor
+    CustomAboutUsDoctor,
+    CustomAboutUsTeam,
+    SliderAboutUsOffice
   }
 }
 </script>

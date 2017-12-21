@@ -13,5 +13,7 @@
           .block-body(slot='body' v-html='props.acf.header.body')
             | {{ props.acf.header.body }}  
             
-    CustomAboutUsDoctor(:props='props.acf.custom_about_us_doctor')        
+    CustomAboutUsDoctor(:props='props.acf.custom_about_us_doctor')
+    CustomAboutUsTeam(:props='props.acf.custom_about_us_team')    
+    SliderAboutUsOffice(:props='props.acf.slider_about_us_office')
     
