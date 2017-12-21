@@ -12,6 +12,13 @@ export default {
   },
   directives: {
     SliderAboutUsTeam
+  },
+  methods: {
+    test (i) {
+      console.log(i)
+      // console.log(this)
+      // :class="{'slider-about-us-team__slide-content--active': test(slide)}"
+    }
   }
 }
 </script>

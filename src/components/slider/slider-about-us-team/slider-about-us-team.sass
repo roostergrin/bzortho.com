@@ -21,7 +21,8 @@
 
   &__bottom
     @extend .col-sm-18
-    margin-top: 155px
+    margin-top: 200px
+    margin-bottom: 50px
 
     @media screen and (max-width: $screen-sm)
       margin-top: 0
@@ -56,6 +57,9 @@
     background-size: cover
     height: 385px
 
+    @media screen and (max-width: $screen-sm)
+      display: none
+
   &__card-content
     @extend .col-sm-12
     position: absolute
@@ -64,6 +68,11 @@
     transform: translateY(-50%)
     background-color: $c8
     padding: rem-calc(78)
+
+    @media screen and (max-width: $screen-sm)
+      position: relative
+      top: 250px
+      padding: rem-calc(32)
 
   &__name
     @extend h3
