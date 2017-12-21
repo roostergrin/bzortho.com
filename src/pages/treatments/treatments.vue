@@ -2,6 +2,11 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
+import Hero from 'components/hero/hero'
+import TreatTitle from 'components/block/block-treatments-title/block-treatments-title'
+import TreatBody from 'components/block/block-treatments-body/block-treatments-body'
+import TreatTabs from 'components/custom/custom-tab-section/custom-tab-section'
 
 export default {
   name: 'treatments',
@@ -14,7 +19,12 @@ export default {
     }
   },
   components: {
-    Loader
+    Loader,
+    NavTrigger,
+    Hero,
+    TreatTitle,
+    TreatBody,
+    TreatTabs
   }
 }
 </script>

@@ -7,7 +7,7 @@ import BlockBox from 'components/block/block-text-box/block-text-box'
 import BlockSlider from 'components/block/block-slider-container/block-slider-container'
 import CustomSectionHome from 'components/custom/custom-section-home/custom-section-home'
 import RepeaterTabsHome from 'components/repeaters/repeaters-tabs-home/repeaters-tabs-home'
-import Hero from 'components/Hero/Hero'
+import Hero from 'components/hero/hero'
 import Slider from 'components/slider/slider' // TODO: LUKE
 import SliderItem from 'components/slider/slider-item' // TODO: LUKE
 import RepeatersHomeImages from 'components/repeaters/repeaters-home-images/repeaters-home-images'
