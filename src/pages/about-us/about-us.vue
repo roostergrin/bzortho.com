@@ -2,7 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
-import Hero from 'components/Hero/Hero'
+import Hero from 'components/hero/hero'
 
 export default {
   name: 'about-us',
