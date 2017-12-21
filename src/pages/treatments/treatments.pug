@@ -10,9 +10,13 @@
       TreatBody.segment-3(:props='props.acf.kids.section_3')
     .section-3
       TreatTitle(:props='props.acf.teens')
-      TabsSection(:props='props.acf.teens.tabs')
-      TreatBody.segment-1(:props='props.acf.teens.section_2')
-      TreatBody.segment-2(:props='props.acf.teens.invisalign')
+      TreatBody.segment-1(:props='props.acf.teens.section_1')
+      TreatTabs.segment-2(:props='props.acf.teens.tabs')
+      TreatImage.segment-3(:props='props.acf.teens.section_3')
+      TreatBody.segment-4(:props='props.acf.teens.section_2')
+      .segment-5
+        TreatBody.sub-segment-1(:props='props.acf.teens.invisalign')
+        TreatImage.sub-segment-2(:props='props.acf.teens.invisalign')
     .section-2
       TreatTitle(:props='props.acf.adults')
       TreatBody.segment-1(:props='props.acf.adults.section_1')

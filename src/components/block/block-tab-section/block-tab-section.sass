@@ -1,0 +1,22 @@
+.block-tab-section
+  &__tabs
+    @extend .clearfix
+    margin: 0 0 2rem
+    border-bottom: 2px solid $c7
+  &__tab
+    @extend h4
+    float: left
+    padding: 1rem 0
+    width: calc(100% / 3)
+    text-align: center
+    text-transform: uppercase
+    color: $c2
+    &:hover
+      cursor: pointer
+    &.active
+      border: 2px solid $c7
+      border-bottom: none
+      color: $c7
+
+  &__body
+    color: $c2
