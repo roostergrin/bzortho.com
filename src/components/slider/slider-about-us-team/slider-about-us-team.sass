@@ -21,24 +21,24 @@
 
   &__bottom
     @extend .col-sm-18
-    margin-top: 200px
+    margin-top: 155px
 
     @media screen and (max-width: $screen-sm)
       margin-top: 0
 
   &__slides
     transform: translateY(25px)
-    // height: 225px
 
   &__slide-content
     transform: translateY(25px)
-    margin: 1em
-    background-color: $c3
-    height: 150px
+    margin: rem-calc(16) rem-calc(24)
+    background-position: center center
+    background-size: cover
+    height: 187px
 
     &--active
       transform: none
-      height: 200px
+      height: 239px
 
       @media screen and (max-width: $screen-sm)
         height: 150px
@@ -48,7 +48,59 @@
 
     &--active
       display: block
+      height: 100%
+
+  &__card-image
+    @extend .col-sm-5
+    background-position: center center
+    background-size: cover
+    height: 385px
+
+  &__card-content
+    @extend .col-sm-12
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    background-color: $c8
+    padding: rem-calc(78)
+
+  &__name
+    @extend h3
+    margin-bottom: rem-calc(8)
+    text-transform: uppercase
+    color: $c7
+
+  &__position
+    @extend h4
+    margin-bottom: rem-calc(26)
+    text-transform: uppercase
+
+  // ---------------------- slick slider
 
   .slick-prev, .slick-next
     &:before
       color: $c2
+
+  .slick-dots
+    li
+      button
+        border: 1px solid $c2
+        border-radius: 50%
+        width: 10px
+        height: 10px
+
+        &:hover
+          background-color: $c3
+
+        &:before
+          border: 1px solid $c2
+          border-radius: 50%
+          // background-color: $c2
+          width: 10px
+          height: 10px
+          font-size: 0
+
+  .slick-active
+    button
+      background-color: $c2

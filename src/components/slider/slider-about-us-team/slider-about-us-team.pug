@@ -1,17 +1,23 @@
 .slider-about-us-team
   .slider-about-us-team__container
     .slider-about-us-team__title
-      | Meet the team
+      | {{ props.title }}
       
     .slider-about-us-team__top
       .slider-about-us-team__slides(v-slider-about-us-team-directive='')
-        .slider-about-us-team__slide(v-for='(slide, i) in 6')
-          .slider-about-us-team__slide-content(:id="'slide-' + i")
-            | Team Member Photo {{ i }}
+        .slider-about-us-team__slide(v-for='(slide, i) in props.members')
+          .slider-about-us-team__slide-content(:id="'slide-' + i", :style="{backgroundImage: 'url('+ slide.photo_2 +')'}")
           .slider-about-us-team__slide-content.slider-about-us-team__slide-content--option(v-if='active')
-            | Team Member Photo 2
+            | {{ slide.photo_1 }}
       
     .slider-about-us-team__bottom
       .slider-about-us-team__cards
-        .slider-about-us-team__card(v-for='(card, j) in 6', :id="'card-' + j", :class="{'slider-about-us-team__card--active': j === 0}")
-          | Bottom {{ j }}
+        .slider-about-us-team__card(v-for='(card, j) in props.members', :id="'card-' + j", :class="{'slider-about-us-team__card--active': j === 1}")
+          .slider-about-us-team__card-image(:style="{backgroundImage: 'url('+ card.photo_1 +')'}")
+          .slider-about-us-team__card-content
+            .slider-about-us-team__name
+              | {{ card.name }}
+            .slider-about-us-team__position
+              | {{ card.position }}
+            .slider-about-us-team__bio    
+              | {{ card.bio }}
