@@ -1,0 +1,23 @@
+.custom-wild-smiles-sections
+  .custom-wild-smiles-sections__section(v-for='(section, k) in props.sections')
+    .custom-wild-smiles-sections__container(v-if='k%2')
+      .custom-wild-smiles-sections__image(:style="{ backgroundImage: 'url('+ section.image +')' }")
+        
+      .custom-wild-smiles-sections__textarea.custom-wild-smiles-sections__textarea--option
+        .custom-wild-smiles-sections__position
+          .custom-wild-smiles-sections__title
+            | {{ section.title }}
+
+          .custom-wild-smiles-sections__content(v-html="section.content")
+        
+    //------------- option
+            
+    .custom-wild-smiles-sections__container(v-else)
+      .custom-wild-smiles-sections__textarea
+        .custom-wild-smiles-sections__position
+          .custom-wild-smiles-sections__title
+            | {{ section.title }}
+
+          .custom-wild-smiles-sections__content(v-html="section.content")
+            
+      .custom-wild-smiles-sections__image.custom-wild-smiles-sections__image--option(:style="{ backgroundImage: 'url('+ section.image +')' }")
