@@ -1,0 +1,9 @@
+.custom-get-started-services
+  .custom-get-started-services__container
+    .custom-get-started-services__image(:style="{ backgroundImage: 'url('+ props.image +')' }")
+    .custom-get-started-services__textarea
+      .custom-get-started-services__position
+        .custom-get-started-services__title
+          | {{ props.title }}
+        .custom-get-started-services__content(v-html='props.content')
+        

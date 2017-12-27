@@ -2,3 +2,11 @@
   Loader(v-show='loading')
   div(v-if='props')
     Hero(:props='props.acf.hero')
+    CustomGetStartedServices(:props='props.acf.section_4')
+    BlockTextBox(:props='props.acf.section_5')
+      .block-text-box(slot='header')
+        | {{ props.acf.section_5.title }}
+      .block-text-box(slot='subheader')  
+        | {{ props.acf.section_5.sub_title }}
+      .block-text-box(slot='body' v-html='props.acf.section_5.body')
+    CustomPatientForms(:props='props.acf.section_6')

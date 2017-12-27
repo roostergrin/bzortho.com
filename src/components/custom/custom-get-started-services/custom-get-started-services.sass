@@ -1,0 +1,42 @@
+.custom-get-started-services
+  &__container
+    position: relative
+    padding: rem-calc(64) 0
+    overflow: auto
+
+  &__image
+    @extend .col-sm-7
+    background-position: center center
+    background-size: cover
+    height: 400px
+
+  &__textarea
+    @extend .col-sm-9
+    @extend .col-sm-offset-1
+    height: 400px
+
+  &__position
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    @media screen and (max-width: $screen-sm)
+      position: relative
+      top: 0
+      transform: none
+      margin-top: rem-calc(64)
+
+  &__title
+    @extend h3
+    text-transform: uppercase
+    color: $c7
+
+  &__content
+    @extend %p2
+
+    li
+      margin-bottom: rem-calc(16)
+      text-transform: uppercase
+      color: $c7
+      font-size: 14px
+      font-weight: bold

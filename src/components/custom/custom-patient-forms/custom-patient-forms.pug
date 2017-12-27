@@ -1,0 +1,12 @@
+.custom-patient-forms
+  .custom-patient-forms__bg(:style="{ backgroundImage: 'url('+ props.image +')' }")
+    .custom-patient-forms__container
+      .custom-patient-forms__textarea
+        .custom-patient-forms__title
+          | {{ props.title }}  
+        .custom-patient-forms__subtitle
+          | {{ props.sub_title }}
+      
+      a(:href='props.href')  
+        .custom-patient-forms__button
+          | {{ props.button }}
