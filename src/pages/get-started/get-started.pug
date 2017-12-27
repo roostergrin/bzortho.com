@@ -2,6 +2,7 @@
   Loader(v-show='loading')
   div(v-if='props')
     Hero(:props='props.acf.hero')
+    CustomGetStartedFirstVisit(:props='props.acf.section_1')
     CustomGetStartedServices(:props='props.acf.section_4')
     BlockTextBox(:props='props.acf.section_5')
       .block-text-box(slot='header')
