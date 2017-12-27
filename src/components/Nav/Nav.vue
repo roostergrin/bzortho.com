@@ -22,9 +22,6 @@ export default {
       }
     }
   },
-  created () {
-    // console.log(this)
-  },
   methods: {
     openLogin () {
       this.isOpen = !this.isOpen
