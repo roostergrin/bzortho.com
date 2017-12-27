@@ -2,6 +2,16 @@
 
 <script>
 export default {
-  props: ['props']
+  data: () => {
+    return {
+      name: '',
+      email: '',
+      phone: '',
+      message_1: '',
+      message_2: '',
+      message_3: '',
+      formSubmitted: false
+    }
+  }
 }
 </script>
