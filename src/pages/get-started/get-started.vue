@@ -5,6 +5,7 @@ import Loader from 'components/loader/loader'
 import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
 import CustomGetStartedFirstVisit from 'components/custom/custom-get-started-first-visit/custom-get-started-first-visit'
+import CustomGetStartedSection from 'components/custom/custom-get-started-section/custom-get-started-section'
 import CustomGetStartedServices from 'components/custom/custom-get-started-services/custom-get-started-services'
 import BlockTextBox from 'components/block/block-text-box/block-text-box'
 import CustomPatientForms from 'components/custom/custom-patient-forms/custom-patient-forms'
@@ -26,7 +27,8 @@ export default {
     CustomGetStartedServices,
     BlockTextBox,
     CustomPatientForms,
-    CustomGetStartedFirstVisit
+    CustomGetStartedFirstVisit,
+    CustomGetStartedSection
   }
 }
 </script>

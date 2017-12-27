@@ -31,6 +31,10 @@
     letter-spacing: 3px
     color: $c7
 
+    @media screen and (max-width: $screen-sm)
+      left: 80px
+      font-size: 26px
+
   &__container
     @extend .container-fluid
     padding-top: rem-calc(64)
@@ -54,6 +58,9 @@
   &__content
     @extend %p2
     transform: translateY(-40%)
+
+    @media screen and (max-width: $screen-sm)
+      transform: none
 
     ul
       margin-top: rem-calc(40)
