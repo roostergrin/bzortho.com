@@ -1,4 +1,21 @@
 .pages-getting
   Loader(v-show='loading')
   div(v-if='props')
-    Hero(:props='props.acf.hero')
+    NavTrigger
+      Hero(:props='props.acf.hero')
+    pre {{ props }}
+    .section-1
+    .section-2
+    .section-3
+    .section-4
+    .section-5
+      BlockBox
+        .block-header(slot='header')
+          | {{ props.acf.section_5.title }}
+        .block-subheader(slot='subheader')  
+          | {{ props.acf.section_5.sub_title }}
+        .block-body(slot='body' v-html='props.acf.section_5.body')
+          | {{ props.acf.section_5.body }}
+    .section-6
+      ImageButton(:props='props.acf.section_6')
+      
