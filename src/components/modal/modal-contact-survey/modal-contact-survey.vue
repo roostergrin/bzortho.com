@@ -1,6 +1,8 @@
 <template lang="pug" src="./modal-contact-survey.pug"></template>
 
 <script>
+import FormSurvey from 'components/form/form-survey/form-survey'
+
 export default {
   props: ['props'],
   data () {
@@ -10,6 +12,9 @@ export default {
   },
   updated () {
     this.active ? this.$root.$el.classList.add('overflow-hidden') : this.$root.$el.classList.remove('overflow-hidden')
+  },
+  components: {
+    FormSurvey
   }
 }
 </script>

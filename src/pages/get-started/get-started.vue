@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
 import CustomGetStartedFirstVisit from 'components/custom/custom-get-started-first-visit/custom-get-started-first-visit'
@@ -28,7 +29,8 @@ export default {
     BlockTextBox,
     CustomPatientForms,
     CustomGetStartedFirstVisit,
-    CustomGetStartedSection
+    CustomGetStartedSection,
+    BackgroundLogo
   }
 }
 </script>
