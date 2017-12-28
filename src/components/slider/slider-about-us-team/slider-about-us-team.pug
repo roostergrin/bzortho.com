@@ -4,9 +4,9 @@
       | {{ props.title }}
       
     .slider-about-us-team__top
-      .slider-about-us-team__slides(v-slider-about-us-team-directive='', id='slides')
+      .slider-about-us-team__slides(v-slider-about-us-team-directive='')
         .slider-about-us-team__slide(v-for='(slide, i) in props.members')
-          .slider-about-us-team__slide-content(:id="'slide-' + i", :style="{backgroundImage: 'url('+ slide.photo_2 +')'}")
+          .slider-about-us-team__slide-content(:id="'slide-' + i", :style="{backgroundImage: 'url('+ slide.photo_2 +')'}", :class="{'zero': i === 0}")
           .slider-about-us-team__slide-content.slider-about-us-team__slide-content--option(v-if='active')
             | {{ slide.photo_1 }}
       
