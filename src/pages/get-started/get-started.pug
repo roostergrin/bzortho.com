@@ -2,7 +2,8 @@
   Loader(v-show='loading')
   BackgroundLogo
   div(v-if='props')
-    Hero(:props='props.acf.hero')
+    NavTrigger
+      Hero(:props='props.acf.hero')
     CustomGetStartedFirstVisit(:props='props.acf.section_1')
     CustomGetStartedSection(:props='props.acf.section_2')
     CustomGetStartedServices(:props='props.acf.section_4')

@@ -1,0 +1,8 @@
+.custom-image-button(:style="{ backgroundImage: 'url('+ props.image +')'}")
+  .custom-image-button__container
+    .custom-image-button__title
+      | {{ props.title }}
+    .custom-image-button__subtitle
+      | {{ props.sub_title }}
+    a.custom-image-button__button(:href='props.href')
+      | {{ props.button }}
