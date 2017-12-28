@@ -15,7 +15,7 @@
     z-index: 999999
     &-button
       float: right
-      margin: 4em 2rem 2rem
+      margin: 0 1rem
       border: none
       background: transparent
       color: $c4
@@ -24,7 +24,7 @@
         cursor: pointer
         width: 2em
         .x
-          stroke: $c8
+          stroke: $c7
 
   &__container
     position: absolute
@@ -34,17 +34,17 @@
     z-index: 999
     background: $c8
     padding: 2rem
-    height: 70%
+    height: 80%
     overflow: scroll
 
   &__box
     position: absolute
     top: 10%
-    right: 10%
+    right: 20%
     bottom: 10%
-    left: 10%
+    left: 20%
     z-index: 999
-    overflow: scroll
+    overflow: auto
 
   &__title
     @extend %h2

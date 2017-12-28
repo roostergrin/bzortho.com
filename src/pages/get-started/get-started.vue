@@ -3,6 +3,7 @@
 <script>
 import Loader from 'components/loader/loader'
 import BackgroundLogo from 'components/custom/custom-background/custom-background'
+import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
 import CustomGetStartedFirstVisit from 'components/custom/custom-get-started-first-visit/custom-get-started-first-visit'
@@ -23,6 +24,7 @@ export default {
   },
   components: {
     Loader,
+    NavTrigger,
     Hero,
     Icon,
     CustomGetStartedServices,
