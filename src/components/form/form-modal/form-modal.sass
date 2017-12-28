@@ -1,7 +1,12 @@
-.form-contact-page
+.form-modal
 
   &__group
     margin-bottom: rem-calc(26)
+    textarea
+      height: 9rem
+
+      @media (max-width: 1279px)
+        height: 5rem
 
     &--checkboxes
       @extend %p2
@@ -14,6 +19,7 @@
         border: 2px solid $c7
 
     &--submit
+      margin-bottom: 0
       text-align: center
 
   &__input

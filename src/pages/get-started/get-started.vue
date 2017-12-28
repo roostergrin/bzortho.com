@@ -2,11 +2,15 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
-import BlockBox from 'components/block/block-text-box/block-text-box'
-import ImageButton from 'components/custom/custom-image-button/custom-image-button'
+import CustomGetStartedFirstVisit from 'components/custom/custom-get-started-first-visit/custom-get-started-first-visit'
+import CustomGetStartedSection from 'components/custom/custom-get-started-section/custom-get-started-section'
+import CustomGetStartedServices from 'components/custom/custom-get-started-services/custom-get-started-services'
+import BlockTextBox from 'components/block/block-text-box/block-text-box'
+import CustomPatientForms from 'components/custom/custom-patient-forms/custom-patient-forms'
 
 export default {
   name: 'get-started',
@@ -23,8 +27,12 @@ export default {
     NavTrigger,
     Hero,
     Icon,
-    BlockBox,
-    ImageButton
+    CustomGetStartedServices,
+    BlockTextBox,
+    CustomPatientForms,
+    CustomGetStartedFirstVisit,
+    CustomGetStartedSection,
+    BackgroundLogo
   }
 }
 </script>

@@ -1,0 +1,49 @@
+.form-survey
+  .form-survey__container
+    .form-survey__title
+      | Post-Appointment Survey
+    .form-survey__content
+      | We appreciate you choosing our practice, and we are committed to making sure that your time spent with us is as comfortable and fulfilling as possible. In order to continue providing the kind of care that keeps our patients smiling, we encourage your comments and suggestions about the treatments and personal care you’ve received while visiting our practice.
+    .form-survey__form
+      form.form-contact-page__form(@submit.prevent='validateBeforeSubmit', v-if='!formSubmitted')
+  
+        .form-contact-page__group.form-contact-page__group--checkboxes
+          h4 How Would You Rate Your Overall Experience?
+          input.form-contact-page__checkbox(name='yes', type='checkbox', value='Good') 
+          label Good
+          input.form-contact-page__checkbox(name='yes', type='checkbox', value='Poor') 
+          label Poor
+          
+          p
+            input.form-contact-page__checkbox(name='yes', type='checkbox', value='Great') 
+            label Great
+            input.form-contact-page__checkbox(name='yes', type='checkbox', value='Average') 
+            label Average
+          
+        .form-contact-page__group
+          h4 Please describe your experience visiting our practice.
+          textarea.form-contact-page__input(name='message_1', v-model='message_1', :validate="'required'", type='text', placeholder='', rows='3')       
+          
+        .form-contact-page__group
+          h4 What was your favorite thing about being at our practice?
+          textarea.form-contact-page__input(name='message_2', v-model='message_2', :validate="'required'", type='text', placeholder='', rows='3')     
+          
+        .form-contact-page__group
+          h4 Please provide any additional comments/suggestions.
+          textarea.form-contact-page__input(name='message_3', v-model='message_3', :validate="'required'", type='text', placeholder='', rows='3')
+            
+        .form-contact-page__group.form-contact-page__group--checkboxes
+          h4 Would you like a member of our team to contact you to further discuss your experience? 
+          input.form-contact-page__checkbox(name='yes', type='checkbox', value='Yes') 
+          label Yes
+          input.form-contact-page__checkbox(name='no', type='checkbox', value='No') 
+          label No        
+          
+        .form-contact-page__group
+          input.form-contact-page__input(name='name', v-model='name', :validate="'required|alpha_spaces'", type='text', placeholder='Your Full Name')
+            
+        .form-contact-page__group
+          input.form-contact-page__input(name='email', v-model='email', :validate="'required'", type='text', placeholder='Your Email') 
+              
+        .form-contact-page__group.form-contact-page__group--submit
+          input.form-contact-page__submit(name='submit', type='submit', value='SUBMIT SURVEY')  

@@ -1,0 +1,10 @@
+.custom-get-started-first-visit
+  .custom-get-started-first-visit__border
+    .custom-get-started-first-visit__title
+      | {{ props.title }}
+    .custom-get-started-first-visit__container
+      .custom-get-started-first-visit__col.custom-get-started-first-visit__col--left
+        .custom-get-started-first-visit__image(:style="{ backgroundImage: 'url('+ props.image +')'}")
+          
+      .custom-get-started-first-visit__col.custom-get-started-first-visit__col--right
+        .custom-get-started-first-visit__content(v-html='props.content')  

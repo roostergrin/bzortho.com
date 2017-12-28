@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import BlockBox from 'components/block/block-text-box/block-text-box'
 import BlockSlider from 'components/block/block-slider-container/block-slider-container'
@@ -37,7 +38,8 @@ export default {
     Hero,
     CustomSectionHome,
     RepeaterTabsHome,
-    RepeatersHomeImages
+    RepeatersHomeImages,
+    BackgroundLogo
   },
   mounted () {
     this.list = this.props

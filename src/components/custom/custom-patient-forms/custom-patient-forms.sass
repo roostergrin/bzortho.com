@@ -1,0 +1,53 @@
+.custom-patient-forms
+  margin-top: rem-calc(64)
+  color: $c8
+
+  &__bg
+    background-position: center center
+    background-size: cover
+
+  &__container
+    @extend .container-fluid
+    padding: rem-calc(64) rem-calc(16)
+
+  &__textarea
+    @extend .col-sm-8
+    @extend .col-sm-offset-1
+
+  &__title
+    @extend h2
+    text-transform: uppercase
+    font-weight: 400
+    @media screen and (max-width: $screen-sm)
+      text-align: center
+
+  &__subtitle
+    @extend h3
+    text-transform: uppercase
+    font-weight: 400
+    @media screen and (max-width: $screen-sm)
+      margin-top: rem-calc(24)
+
+  &__button
+    @extend h3
+    display: inline-block
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    border: 2px solid $c8
+    padding: rem-calc(21) rem-calc(40)
+    font-weight: 400
+
+    @media screen and (max-width: $screen-sm)
+      position: relative
+      top: 0
+      transform: none
+      margin-top: rem-calc(32)
+
+  a
+    border: none
+    color: $c8
+
+    &:hover
+      border: none
+      color: $c7

@@ -4,19 +4,24 @@
     padding: rem-calc(84) 0
 
   &__image-bg
-    @extend .col-sm-6
+    @extend .col-sm-8
 
   &__image
     width: rem-calc(505)
     height: rem-calc(505)
 
+    @media screen and (max-width: $screen-sm)
+      display: none
+
   &__image-text
     @extend %p1
     margin-top: rem-calc(16)
 
+    @media screen and (max-width: $screen-sm)
+      display: none
+
   &__textarea
-    @extend .col-sm-6
-    // padding-left: rem-calc(99)
+    @extend .col-sm-8
 
     h4
       margin-top: 0
