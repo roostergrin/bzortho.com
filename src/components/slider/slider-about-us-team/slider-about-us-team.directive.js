@@ -26,23 +26,34 @@ const SliderAboutUsTeam = Vue.directive('slider-about-us-team-directive', {
         ]
       })
       $('#slide-1').addClass('slider-about-us-team__slide-content--active')
+      // console.log($('#slides').find('.slick-active.slick-slide')[1].child())
       // eslint-disable-next-line
       const allSlides = $('.slider-about-us-team__card').length
+
+      slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        const num = $('.slider-about-us-team__card').length - 1
+        if (currentSlide === num) {
+          setTimeout(function () {
+            $('#slide-0').addClass('slider-about-us-team__slide-content--active')
+          }, 1000)
+          $('#slide-0').addClass('slider-about-us-team__slide-content--active')
+          // $('#card-0').addClass('slider-about-us-team__card--active')
+        }
+      })
 
       slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         const num = allSlides - 1
 
-        // $('#slide-0').removeClass('slider-about-us-team__slide-content--active')
-        // $('#card-0').removeClass('slider-about-us-team__card--active')
-
-        if (currentSlide === 0 || nextSlide === num) {
-          zero(event, slick, currentSlide, nextSlide)
-        }
         if (currentSlide === num) {
-          last(event, slick, currentSlide, nextSlide)
+          zero(event, slick, currentSlide, nextSlide)
         }
         if (nextSlide > currentSlide) {
           forward(event, slick, currentSlide, nextSlide)
+        }
+        if (nextSlide === num) {
+          console.log('lastSlide')
+          $('#slide-0').addClass('slider-about-us-team__slide-content--active')
+          $('#card-0').addClass('slider-about-us-team__card--active')
         }
         if (nextSlide < currentSlide && nextSlide !== num) {
           backward(event, slick, currentSlide, nextSlide)
@@ -50,21 +61,17 @@ const SliderAboutUsTeam = Vue.directive('slider-about-us-team-directive', {
       })
 
       function zero (event, slick, currentSlide, nextSlide) {
-        $('#slide-0').addClass('slider-about-us-team__slide-content--active')
-        $('#card-0').addClass('slider-about-us-team__card--active')
-        console.log($('#card-0'))
-      }
-      function last (event, slick, currentSlide, nextSlide) {
-        if (currentSlide !== 0) {
-          $('#slide-0').removeClass('slider-about-us-team__slide-content--active')
-          $('#card-0').removeClass('slider-about-us-team__card--active')
-        }
-      }
-      function forward (event, slick, currentSlide, nextSlide) {
-        var trueCurrent = nextSlide + 1
-        var lastSlide = currentSlide + 1
         $('#slide-0').removeClass('slider-about-us-team__slide-content--active')
         $('#card-0').removeClass('slider-about-us-team__card--active')
+      }
+      function forward (event, slick, currentSlide, nextSlide) {
+        // const num = allSlides - 1
+        // if (currentSlide !== num) {
+        //   $('#slide-0').removeClass('slider-about-us-team__slide-content--active')
+        //   $('#card-0').removeClass('slider-about-us-team__card--active')
+        // }
+        var trueCurrent = nextSlide + 1
+        var lastSlide = currentSlide + 1
         $('#slide-' + trueCurrent).addClass('slider-about-us-team__slide-content--active')
         $('#slide-' + lastSlide).removeClass('slider-about-us-team__slide-content--active')
         $('#card-' + lastSlide).removeClass('slider-about-us-team__card--active')
