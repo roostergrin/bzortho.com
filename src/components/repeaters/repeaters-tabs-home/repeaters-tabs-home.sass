@@ -11,6 +11,11 @@
     @extend .col-sm-4
     text-align: center
 
+    @media screen and (max-width: $screen-sm)
+      padding: 2rem 0
+      &:last-child
+        padding: 2rem 0 0
+
   &__icon
     display: inline-block
     margin-bottom: rem-calc(24)

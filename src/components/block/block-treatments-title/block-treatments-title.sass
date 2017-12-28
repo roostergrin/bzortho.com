@@ -7,6 +7,9 @@
     margin-left: 20%
     padding: 1.5rem 0
 
+    @media screen and (max-width: $screen-sm)
+      margin: 0
+
   &__title
     @extend h1
     text-align: center
@@ -27,3 +30,9 @@
       background-repeat: no-repeat
       background-position: right
       background-size: contain
+
+      @media screen and (max-width: $screen-sm)
+        top: 2rem
+        right: 0
+        bottom: 2rem
+        left: 0

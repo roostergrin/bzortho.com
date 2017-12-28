@@ -8,30 +8,18 @@
     .pages-getting &
       height: rem-calc(600)
 
-      @media screen and (max-width: $screen-sm)
-        height: 100vh
-
     .pages-about-us &, .pages-invisalign &, .pages-treatments &, .pages-wild-smiles &
       background-position: center center
       height: rem-calc(400)
 
   &__text-box
 
+    @media screen and (max-width: $screen-sm)
+      background-color: $c12
+      height: 100%
+
     .pages-getting &
       @extend h1
-      position: absolute
-      top: 25%
-      left: 10%
-      width: 40%
-      text-align: center
-      text-transform: uppercase
-      color: $c8
-      font-weight: 700
-
-      @media screen and (max-width: $screen-sm)
-        top: 18%
-        left: 10%
-        width: 80%
 
     .pages-about-us &, .pages-invisalign &, .pages-treatments &, .pages-wild-smiles &
       @extend h1
@@ -49,6 +37,13 @@
         text-align: center
 
   &__title
+
+    @media screen and (max-width: $screen-sm)
+      position: absolute
+      top: 40%
+      transform: translateY(-50%)
+      font-size: 1.5rem
+
     .pages-getting &
       @extend h2
       margin-bottom: rem-calc(10)
@@ -56,3 +51,22 @@
       color: $c2
       font-size: 24px
       font-weight: 500
+
+      @media screen and (max-width: $screen-sm)
+        position: absolute
+        top: 40%
+        transform: translateY(-50%)
+        font-size: 1.5rem
+
+  &__subtext
+
+    .pages-getting &
+      @media screen and (max-width: $screen-sm)
+        position: absolute
+        top: 60%
+        transform: translateY(-50%)
+
+    @media screen and (max-width: $screen-sm)
+      position: absolute
+      top: 60%
+      transform: translateY(-50%)

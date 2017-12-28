@@ -3,6 +3,9 @@
     @extend .container-fluid
     padding-bottom: rem-calc(64)
 
+    @media screen and (max-width: $screen-sm)
+      padding-bottom: 1rem
+
   &__image
     @extend .col-sm-8
     border: 2px solid $c6
@@ -17,6 +20,9 @@
     @extend .col-sm-9
     height: 350px
 
+    @media screen and (max-width: $screen-sm)
+      height: 100%
+
     &--option
       @extend .col-sm-offset-1
 
@@ -28,6 +34,15 @@
     background-color: $c4
     padding: rem-calc(32) rem-calc(24)
 
+    @media screen and (max-width: $screen-sm)
+      position: relative
+      top: 0
+      transform: none
+      margin: 1rem 0
+      padding: .5rem 0
+      width: 100%
+      text-align: center
+
   &__title
     @extend h3
     text-transform: uppercase
@@ -35,3 +50,6 @@
   &__content
     @extend %p2
     margin-top: rem-calc(16)
+
+    @media screen and (max-width: $screen-sm)
+      padding: 0 .5rem

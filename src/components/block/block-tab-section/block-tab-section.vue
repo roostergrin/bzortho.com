@@ -13,7 +13,6 @@ export default {
     switchTab (i, props) {
       this.body = props
       this.$store.dispatch('VIEW_BODY', i)
-      console.log(this.$store.state.body)
     }
   },
   created () {

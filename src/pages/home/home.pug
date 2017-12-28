@@ -23,7 +23,7 @@
       .subtitle
         | {{ props.acf.section_2.slider_subtitle }}
       .arrow
-      Slider(auto=true, indicators='center')
+      Slider(auto=false, indicators='center')
         SliderItem(slot='item' v-for="(index, i) in props.acf.section_2.slider", :key='index')
           .icon
             object(:data='index.icon' type='image/svg+xml')

@@ -4,7 +4,7 @@
     position: relative
     float: left
     width: 100%
-    height: 80vh
+    height: rem-calc(400)
   .hero__backgroundimage
     position: absolute
     top: 0
@@ -17,6 +17,7 @@
     top: 50%
     left: 20%
     transform: translateY(-50%)
+    
   .hero__title
     @extend %hero
     color: $c8
@@ -65,7 +66,16 @@
       @extend .col-sm-18
       padding-top: 2rem
       padding-bottom: 2rem
+
+      @media screen and (max-width: $screen-sm)
+        padding: 2rem 1rem 0
       .sub-segment-1
         @extend .col-sm-10
+
+        @media screen and (max-width: $screen-sm)
+          padding: 0
       .sub-segment-2
         @extend .col-sm-7
+
+        @media screen and (max-width: $screen-sm)
+          padding: 1rem 0
