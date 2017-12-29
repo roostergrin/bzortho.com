@@ -30,17 +30,6 @@ const SliderAboutUsTeam = Vue.directive('slider-about-us-team-directive', {
       // eslint-disable-next-line
       const allSlides = $('.slider-about-us-team__card').length
 
-      slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
-        const num = $('.slider-about-us-team__card').length - 1
-        if (currentSlide === num) {
-          setTimeout(function () {
-            $('#slide-0').addClass('slider-about-us-team__slide-content--active')
-          }, 1000)
-          $('#slide-0').addClass('slider-about-us-team__slide-content--active')
-          // $('#card-0').addClass('slider-about-us-team__card--active')
-        }
-      })
-
       slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
         const num = allSlides - 1
 
@@ -51,7 +40,6 @@ const SliderAboutUsTeam = Vue.directive('slider-about-us-team-directive', {
           forward(event, slick, currentSlide, nextSlide)
         }
         if (nextSlide === num) {
-          console.log('lastSlide')
           $('.zero').addClass('slider-about-us-team__slide-content--active')
           $('#card-0').addClass('slider-about-us-team__card--active')
           // TODO: Add set time out
