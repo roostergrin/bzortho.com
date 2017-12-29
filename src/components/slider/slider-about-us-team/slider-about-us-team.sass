@@ -15,9 +15,7 @@
     right: 24px
 
     @media screen and (max-width: $screen-sm)
-      position: relative
-      top: 0
-      right: 0
+      display: none
 
   &__bottom
     @extend .col-sm-18
@@ -25,7 +23,7 @@
     margin-bottom: 50px
 
     @media screen and (max-width: $screen-sm)
-      margin-top: 0
+      display: none
 
   &__slides
     transform: translateY(25px)
@@ -84,6 +82,27 @@
     @extend h4
     margin-bottom: rem-calc(26)
     text-transform: uppercase
+
+    @media screen and (max-width: $screen-sm)
+      text-align: center
+
+  // ---------------------- mobile slider
+
+  &__mobile
+    display: none
+
+    @media screen and (max-width: $screen-sm)
+      display: block
+
+  &__card-image-mobile
+    margin-top: rem-calc(32)
+    background-position: center center
+    background-size: cover
+    height: 300px
+
+  &__card-content-mobile
+    padding: rem-calc(32) rem-calc(16)
+    text-align: center
 
   // ---------------------- slick slider
 

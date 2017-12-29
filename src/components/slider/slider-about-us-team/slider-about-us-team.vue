@@ -2,6 +2,7 @@
 
 <script>
 import SliderAboutUsTeam from './slider-about-us-team.directive'
+import SliderAboutUsTeamMobile from './slider-about-us-team-mobile.directive'
 
 export default {
   props: ['props'],
@@ -11,14 +12,8 @@ export default {
     }
   },
   directives: {
-    SliderAboutUsTeam
-  },
-  methods: {
-    test (i) {
-      console.log(i)
-      // console.log(this)
-      // :class="{'slider-about-us-team__slide-content--active': test(slide)}"
-    }
+    SliderAboutUsTeam,
+    SliderAboutUsTeamMobile
   }
 }
 </script>

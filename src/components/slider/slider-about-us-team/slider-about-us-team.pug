@@ -2,11 +2,10 @@
   .slider-about-us-team__container
     .slider-about-us-team__title
       | {{ props.title }}
-      
     .slider-about-us-team__top
-      .slider-about-us-team__slides(v-slider-about-us-team-directive='', id='slides')
+      .slider-about-us-team__slides(v-slider-about-us-team-directive='')
         .slider-about-us-team__slide(v-for='(slide, i) in props.members')
-          .slider-about-us-team__slide-content(:id="'slide-' + i", :style="{backgroundImage: 'url('+ slide.photo_2 +')'}")
+          .slider-about-us-team__slide-content(:id="'slide-' + i", :style="{backgroundImage: 'url('+ slide.photo_2 +')'}", :class="{'zero': i === 0}")
           .slider-about-us-team__slide-content.slider-about-us-team__slide-content--option(v-if='active')
             | {{ slide.photo_1 }}
       
@@ -15,6 +14,17 @@
         .slider-about-us-team__card(v-for='(card, j) in props.members', :id="'card-' + j", :class="{'slider-about-us-team__card--active': j === 1}")
           .slider-about-us-team__card-image(:style="{backgroundImage: 'url('+ card.photo_1 +')'}")
           .slider-about-us-team__card-content
+            .slider-about-us-team__name
+              | {{ card.name }}
+            .slider-about-us-team__position
+              | {{ card.position }}
+            .slider-about-us-team__bio(v-html='card.bio')
+    
+    .slider-about-us-team__mobile
+      .slider-about-us-team__cards-mobile(v-slider-about-us-team-mobile-directive='')
+        .slider-about-us-team__card-mobile(v-for='(card, k) in props.members', :id="'card-' + k", :class="{'slider-about-us-team__card--active': k === 1}")
+          .slider-about-us-team__card-image-mobile(:style="{backgroundImage: 'url('+ card.photo_1 +')'}")
+          .slider-about-us-team__card-content-mobile
             .slider-about-us-team__name
               | {{ card.name }}
             .slider-about-us-team__position
