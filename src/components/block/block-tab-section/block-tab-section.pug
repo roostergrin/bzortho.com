@@ -1,6 +1,8 @@
 .block-tab-section
   .block-tab-section__container
     .block-tab-section__tabs
-      .block-tab-section__tab(v-for='(tabs, i) in props', :key='tabs' @click='switchTab(i, tabs.body)', :class ='{ active: i === $store.state.body }')
+      .block-tab-section__tab(v-for='(tabs, i) in props', :key='tabs' @click='switchTab(i, tabs.body, tabs.image)', :class ='{ active: i === $store.state.body }')
         | {{ tabs.tab }}
     .block-tab-section__body(v-html='body')
+    .block-tab-section__image
+      .background(:style="{ backgroundImage: 'url('+ image +')'}")
