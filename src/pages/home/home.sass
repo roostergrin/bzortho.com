@@ -33,10 +33,11 @@
     @extend %hero
     color: $c8
   &__title
-    .block-text-box__bg
-      background-color: $c9
     .block-text-box__body
       padding: 0
+    .block-header
+      @extend h1
+      margin: 0
   &__slider
     @extend .container-fluid
     padding: 0

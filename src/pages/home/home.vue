@@ -9,8 +9,8 @@ import BlockSlider from 'components/block/block-slider-container/block-slider-co
 import CustomSectionHome from 'components/custom/custom-section-home/custom-section-home'
 import RepeaterTabsHome from 'components/repeaters/repeaters-tabs-home/repeaters-tabs-home'
 import Hero from 'components/hero/hero'
-import Slider from 'components/slider/slider' // TODO: LUKE
-import SliderItem from 'components/slider/slider-item' // TODO: LUKE
+import Slider from 'components/slider/slider'
+import SliderItem from 'components/slider/slider-item'
 import RepeatersHomeImages from 'components/repeaters/repeaters-home-images/repeaters-home-images'
 
 export default {

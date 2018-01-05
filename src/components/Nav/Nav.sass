@@ -19,11 +19,14 @@
   z-index: 9999
   background: $c11
   width: 100%
+
   &.scrolled
-    animation: moveOut .35s ease-in forwards
+    // animation: moveOut .35s ease-in forwards
+    box-shadow: 1px 1px 3px $c13
+    background-color: $c8
 
   &.reset
-    animation: moveIn .35s ease-in forwards
+    background: $c11
 
   @media screen and (min-width: $screen-sm)
     display: block
@@ -53,9 +56,11 @@
   //------
 
   &__logo
-    float: left
-    margin: 1rem
-    width: 11rem
+    position: absolute
+    top: 50%
+    left: rem-calc(32)
+    transform: translateY(-50%)
+    width: rem-calc(250)
     @media (max-width: 1100px)
       margin: 1rem 0
 
@@ -196,6 +201,7 @@
       bottom: 45%
       transform: rotate(135deg)
       border-color: $c7
+
   &__log-link-1
     float: right
     a

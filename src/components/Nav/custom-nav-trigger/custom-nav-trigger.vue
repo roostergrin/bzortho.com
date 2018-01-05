@@ -4,8 +4,12 @@
 export default {
   name: 'Trigger',
   props: ['props'],
-  created () {
-    // console.log('ksdlfksj')
+  data () {
+    return {
+      intersectionOptions: {
+        offset: '50%'
+      }
+    }
   },
   methods: {
     isScrolled () {

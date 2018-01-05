@@ -1,6 +1,7 @@
 <template lang='pug' src='./nav-mobile.pug'></template>
 
 <script>
+import Icon from 'components/icon/icon'
 export default {
   props: ['props'],
   data () {
@@ -18,6 +19,9 @@ export default {
       this.links = !this.links
       this.isClicked = !this.isClicked
     }
+  },
+  components: {
+    Icon
   }
 }
 </script>

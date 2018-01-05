@@ -1,7 +1,7 @@
 .block-text-box
 
   &__bg
-    background-color: $c5
+    // background-color: $c5
     height: 100%
 
     .pages-getting &
@@ -13,34 +13,35 @@
       content: ''
 
   &__col
-    height: 200px
+    height: 250px
 
     @media screen and (max-width: $screen-sm)
       height: 250px
 
-    &--left
-      @extend .col-sm-6
-      @extend .col-sm-offset-1
-
       .pages-getting &
         text-align: center
 
-    &--right
-      @extend .col-sm-11
-      background-color: $c8
+  &__right
+    @extend .col-sm-10
+    padding-left: rem-calc(32)
 
-      @media screen and (max-width: $screen-sm)
-        padding-top: rem-calc(64)
+    @media screen and (max-width: $screen-sm)
+      padding-top: rem-calc(64)
+
+  &__left
+    @extend .col-sm-7
+    // @extend .col-sm-offset-1
+    background-color: $c9
+    height: 100%
 
   &__title
     @extend h1
-    @extend .col-sm-16
-    @extend .col-sm-offset-2
+    margin: 0
     text-transform: uppercase
     color: $c2
 
     .pages-getting &
-      @extend h2
+      @extend h1
       width: 100%
       font-size: 28px
 
@@ -49,6 +50,7 @@
 
   &__subtitle
     @extend h2
+    margin-top: 0
     text-transform: uppercase
     color: $c7
 
@@ -59,15 +61,17 @@
       text-align: center
 
     @media screen and (max-width: $screen-lg-desktop)
-      text-align: center
+      // text-align: center
       font-size: rem-calc(25)
 
   &__body
-    @extend .col-sm-16
     @extend %p1
-    position: absolute
-    top: 50%
+    position: relative
+    top: calc(250px/2)
     transform: translateY(-50%)
+
+    &--title
+      @extend .col-sm-offset-2
 
     .pages-getting &
       @extend .col-sm-18

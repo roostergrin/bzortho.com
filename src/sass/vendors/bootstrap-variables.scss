@@ -25,8 +25,10 @@ $c9: #f7f7f7; // off-white
 $c10: #f6f6f6; // off-white-2
 $c11: rgba(255, 255, 255, .75);
 $c12: rgba(50, 50, 50, .8);
+$c13: #f0f0f0; // super-light-gray
 //## Gray and brand colors for use across Bootstrap.
 $ol1: rgba(15, 45, 59, 0.44);
+
 
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -49,7 +51,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $c1 !default;
 //** Global textual link color.
 $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.

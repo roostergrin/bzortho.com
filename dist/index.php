@@ -10,7 +10,7 @@
   <?php wp_footer(); ?>
   <script type="text/javascript">
     WebFontConfig = {
-      google: { families: [ 'Lato:400,700|Roboto+Condensed:400,700' ] }
+      google: { families: [ 'Lato:400,700','Roboto+Condensed:400,700' ] }
     };
     (function() {
       var wf = document.createElement('script');
