@@ -3,6 +3,7 @@
 <script>
 import Loader from 'components/loader/loader'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
+import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import Hero from 'components/hero/hero'
 import BlockBox from 'components/block/block-text-box/block-text-box'
 import CustomAboutUsDoctor from 'components/custom/custom-about-us-doctor/custom-about-us-doctor'
@@ -26,7 +27,8 @@ export default {
     BlockBox,
     CustomAboutUsDoctor,
     CustomAboutUsTeam,
-    SliderAboutUsOffice
+    SliderAboutUsOffice,
+    BackgroundLogo
   }
 }
 </script>

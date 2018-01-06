@@ -1,6 +1,8 @@
 .pages-contact-us
   Loader(v-show='loading')
+  NavTrigger  
   div(v-if='props')
     .pages-contact-us__body
+      | Map
       CustomContactIntro(:props='props.acf')
       CustomContactBody(:props='props')

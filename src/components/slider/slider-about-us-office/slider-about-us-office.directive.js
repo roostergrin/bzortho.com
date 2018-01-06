@@ -10,8 +10,8 @@ const SliderAboutUsOffice = Vue.directive('slider-about-us-office-directive', {
       slider.slick({
         arrows: true,
         autoplay: true,
-        speed: 10000,
-        draggable: true,
+        speed: 3000,
+        fade: true,
         dots: true,
         infinite: true
       })

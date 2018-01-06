@@ -2,17 +2,22 @@
 
   &__container
     @extend .container-fluid
-    padding-top: rem-calc(32)
+    padding-top: rem-calc(120)
+    padding-bottom: rem-calc(64)
+
+    @media screen and (max-width: $screen-sm)
+      padding-top: rem-calc(64)
+      padding-bottom: rem-calc(32)
 
   &__col
     &--left
-      @extend .col-sm-6
+      @extend .col-sm-5
+      @extend .col-sm-offset-1
 
     &--right
       @extend .col-sm-12
 
   &__image
-    @extend .col-sm-14
     margin-bottom: rem-calc(32)
     background-size: cover
     height: 400px
@@ -29,20 +34,38 @@
       padding: 0
 
   &__icon
-    @extend .col-sm-1
+    display: inline-block
+    position: absolute
+    left: 0
 
     object
-      width: rem-calc(33)
+      width: rem-calc(40)
+      max-height: rem-calc(40)
 
   &__textarea
-    @extend .col-sm-17
+    @extend .col-sm-18
 
   &__section-title
     @extend h3
     margin-bottom: rem-calc(16)
+    margin-left: rem-calc(45)
     text-transform: uppercase
 
   &__section-content
-    @extend %p1
-    text-transform: uppercase
+    animation: slide-in 5s ease-out
+    margin-left: rem-calc(45)
     color: $c7
+
+    &--active
+      display: block
+      animation: slide-in 5s ease-out
+
+    @keyfames slide-in
+      from
+        transform: translateY(-100%)
+        opacity: 0
+        color: $c1
+      to
+        transform: translateY(0)
+        opacity: 1
+        color: $c1

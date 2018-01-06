@@ -66,7 +66,10 @@
 
   &__link
     float: left
-    padding: 2rem 1rem
+    padding-top: 2rem
+    padding-bottom: 2rem
+    padding-left: 1.3em
+
     a
       display: block
       float: left
@@ -97,9 +100,26 @@
 
 
   &__phone
+    position: relative
     float: left
-    padding: 2rem 1rem
+    padding: 0 .75rem
+    height: 96px
+
+  &__phone-contents
+    position: relative
+    top: calc(96px/2)
+    transform: translateY(-50%)
+    height: 2rem
+
+    span
+      @extend %p3
+      display: inline-block
+      position: relative
+      transform: translateY(-40%)
+      padding-left: 6px
+
     .icon-container
+      display: inline-block
       width: 2rem
       font-size: 0
       &:hover

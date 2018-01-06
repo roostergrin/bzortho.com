@@ -12,8 +12,10 @@
             
         .nav__misc
           .nav__phone
-            a(href="tel:+15106888465")
-              Icon(name='phone-icon')
+            .nav__phone-contents
+              a(href="tel:+15106888465")
+                Icon(name='phone-icon')
+                span 510.688.8465
           .nav__appointment(@click='openModal')
             a(title='Make Appointment')
               | Make Appointment
@@ -29,4 +31,4 @@
                 a(href="" title='As Patient') 
                   | As Patient
                 
- 
+          

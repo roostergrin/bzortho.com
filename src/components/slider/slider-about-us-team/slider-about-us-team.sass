@@ -13,6 +13,7 @@
     position: absolute
     top: -115px
     right: 24px
+    z-index: 99
 
     @media screen and (max-width: $screen-sm)
       display: none
@@ -60,12 +61,13 @@
 
   &__card-content
     @extend .col-sm-12
+    @extend %p1
     position: absolute
     top: 50%
     right: 0
     transform: translateY(-50%)
     background-color: $c8
-    padding: rem-calc(78)
+    padding: rem-calc(45)
 
     @media screen and (max-width: $screen-sm)
       position: relative

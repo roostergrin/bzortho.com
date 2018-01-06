@@ -3,6 +3,7 @@
 <script>
 import Loader from 'components/loader/loader'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
+import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
 import Intro from 'components/custom/custom-wild-smiles-intro/custom-wild-smiles-intro'
@@ -24,7 +25,8 @@ export default {
     Hero,
     Icon,
     Intro,
-    Sections
+    Sections,
+    BackgroundLogo
   }
 }
 </script>

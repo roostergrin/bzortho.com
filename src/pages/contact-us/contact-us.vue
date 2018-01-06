@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import CustomContactIntro from 'components/custom/custom-contact-intro/custom-contact-intro'
 import CustomContactBody from 'components/custom/custom-contact-body/custom-contact-body'
 
@@ -17,7 +18,8 @@ export default {
   components: {
     CustomContactIntro,
     CustomContactBody,
-    Loader
+    Loader,
+    NavTrigger
   }
 }
 </script>

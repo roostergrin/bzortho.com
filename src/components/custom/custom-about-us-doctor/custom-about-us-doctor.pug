@@ -2,19 +2,16 @@
   .custom-about-us-doctor__container
     .custom-about-us-doctor__col.custom-about-us-doctor__col--left
       .custom-about-us-doctor__image(:style="{backgroundImage: 'url('+ props.image +')'}")
-      
-      .custom-about-us-doctor__section
-        .custom-about-us-doctor__section-title
-          | {{ props.column_left.title }}
-        .custom-about-us-doctor__section-content(v-html='props.column_left.content')
           
       
     .custom-about-us-doctor__col.custom-about-us-doctor__col--right  
-      .custom-about-us-doctor__section(v-for='section in props.column_right')
-        .custom-about-us-doctor__icon
-          object(:data='section.icon', type='image/svg+xml', v-if='section.icon')
-        .custom-about-us-doctor__textarea    
-          .custom-about-us-doctor__section-title
-            | {{ section.title }}
-          .custom-about-us-doctor__section-content(v-html='section.content')
+      .custom-about-us-doctor__section(v-for='(section, i) in props.column_right')
+        .custom-about-us-doctor__textarea
+          .custom-about-us-doctor__icon
+            object(:data='section.icon', type='image/svg+xml', v-if='section.icon')
+          .custom-about-us-doctor__section-title(@click='activate(i)')
+            | {{ section.title }} 
+            span.custom-about-us-doctor__more(v-show='active !== i') +
+            span.custom-about-us-doctor__less(v-show='active === i') -
+          .custom-about-us-doctor__section-content(v-html='section.content', :class="{ 'custom-about-us-doctor__section-content--active': active === i }", v-show='active === i')
       
