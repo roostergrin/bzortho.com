@@ -2,6 +2,7 @@
 
 <script>
 import Loader from 'components/loader/loader'
+import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import Hero from 'components/hero/hero'
 import TreatTitle from 'components/block/block-treatments-title/block-treatments-title'
@@ -26,7 +27,8 @@ export default {
     TreatTitle,
     TreatBody,
     TreatTabs,
-    TreatImage
+    TreatImage,
+    BackgroundLogo
   }
 }
 </script>

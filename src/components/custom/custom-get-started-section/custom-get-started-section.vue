@@ -2,6 +2,16 @@
 
 <script>
 export default {
-  props: ['props']
+  props: ['props'],
+  data () {
+    return {
+      active: ''
+    }
+  },
+  methods: {
+    activate (i) {
+      this.active = i
+    }
+  }
 }
 </script>

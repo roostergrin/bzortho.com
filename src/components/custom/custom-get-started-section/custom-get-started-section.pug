@@ -1,6 +1,10 @@
 .custom-get-started-section
   .custom-get-started-section__container
-    .custom-get-started-section__textarea(v-html='props.content')
-      
+    .custom-get-started-section__textarea
+      .custom-get-started-section__section(v-for='(section, j) in props.content')
+        .custom-get-started-section__title(v-html='section.title')
+        .custom-get-started-section__read-more(v-show='active !== j', @click='activate(j)')
+          | Read More
+        .custom-get-started-section__paragraph(v-html='section.paragraph' v-show='active === j')      
     .custom-get-started-section__image-container
       .custom-get-started-section__image(:style="{ backgroundImage: 'url('+ props.image +')'}")
