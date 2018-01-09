@@ -10,6 +10,9 @@ import TreatBody from 'components/block/block-treatments-body/block-treatments-b
 import TreatTabs from 'components/block/block-tab-section/block-tab-section'
 import TreatImage from 'components/block/block-treatments-image/block-treatments-image'
 
+import Accordion from 'components/accordion/accordion-treatments/accordion-treatments'
+import Tabs from 'components/tabs/tabs-treatments/tabs-treatments'
+
 export default {
   name: 'treatments',
   computed: {
@@ -28,7 +31,9 @@ export default {
     TreatBody,
     TreatTabs,
     TreatImage,
-    BackgroundLogo
+    BackgroundLogo,
+    Accordion,
+    Tabs
   }
 }
 </script>

@@ -1,0 +1,10 @@
+.accordion-treatments
+  .accordion-treatments__container
+    .accordion-treatments__main-title
+      | We Offer These Treatments
+    .accordion-treatments__accordion
+      .accordion-treatments__single(v-for='(section, i) in props.content')
+        .accordion-treatments__title(@click='activate(i)')
+          | {{ section.title }}
+          span +
+        .accordion-treatments__body(v-html='section.content', :class="{ 'accordion-treatments__body--active': active === i }")
