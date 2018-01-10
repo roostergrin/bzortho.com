@@ -9,8 +9,8 @@
   &__image
     background-position: center center
     background-size: cover
-    width: rem-calc(505)
-    height: rem-calc(505)
+    width: 100%
+    height: rem-calc(400)
 
     @media screen and (max-width: $screen-sm)
       display: none
@@ -24,6 +24,7 @@
 
   &__textarea
     @extend .col-sm-8
+    @extend .col-sm-offset-2
     @extend %p2
 
     h2
