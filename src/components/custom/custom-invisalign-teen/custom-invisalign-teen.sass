@@ -8,9 +8,11 @@
     background-size: cover
     height: rem-calc(425)
 
+    @media screen and (max-width: $screen-sm)
+      display: none
+
   &__body
     @extend .col-sm-8
-    // @extend .col-sm-offset-1
 
   &__title
     @extend h2
