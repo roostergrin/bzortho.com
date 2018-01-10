@@ -7,6 +7,8 @@
     @extend .col-sm-8
 
   &__image
+    background-position: center center
+    background-size: cover
     width: rem-calc(505)
     height: rem-calc(505)
 
@@ -24,11 +26,18 @@
     @extend .col-sm-8
     @extend %p2
 
+    h2
+      margin-bottom: rem-calc(16)
+      text-transform: uppercase
+      letter-spacing: 2px
+      color: $c2
+      font-weight: 600
+
     h4
       margin-top: 0
       text-transform: uppercase
       letter-spacing: rem-calc(2)
 
     p
-      @extend %p2
+      @extend %p1
       margin-bottom: rem-calc(46)

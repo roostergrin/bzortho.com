@@ -3,19 +3,38 @@
     @extend .container-fluid
 
   &__image
-    @extend .col-sm-6
+    @extend .col-sm-8
+    background-size: cover
+    height: rem-calc(425)
 
   &__body
-    @extend .col-sm-10
-    @extend .col-sm-offset-2
+    @extend .col-sm-9
+    @extend .col-sm-offset-1
 
   &__title
-    @extend h4
-    font-weight: 600
-    letter-spacing: 2px
+    @extend h2
     text-transform: uppercase
+    letter-spacing: 2px
+    color: $c2
+    font-weight: 600
 
   &__content
     @extend %p1
     margin-top: rem-calc(16)
     margin-bottom: rem-calc(64)
+
+    h2
+      margin-bottom: rem-calc(16)
+      text-transform: uppercase
+      letter-spacing: 2px
+      color: $c2
+      font-weight: 600
+
+    h4
+      margin-top: 0
+      text-transform: uppercase
+      letter-spacing: rem-calc(2)
+
+    p
+      @extend %p1
+      margin-bottom: rem-calc(46)
