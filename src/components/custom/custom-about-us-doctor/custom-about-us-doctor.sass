@@ -51,6 +51,9 @@
     margin-left: rem-calc(45)
     text-transform: uppercase
 
+    &:hover
+      cursor: pointer
+
   &__section-content
     animation: slide-in 5s ease-out
     margin-left: rem-calc(45)
@@ -59,13 +62,3 @@
     &--active
       display: block
       animation: slide-in 5s ease-out
-
-    @keyfames slide-in
-      from
-        transform: translateY(-100%)
-        opacity: 0
-        color: $c1
-      to
-        transform: translateY(0)
-        opacity: 1
-        color: $c1

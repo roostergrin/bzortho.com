@@ -14,8 +14,10 @@
             | {{ props.acf.header.sub_title }}
           .block-body(slot='body' v-html='props.acf.header.body')
             | {{ props.acf.header.body }}
+
     CustomSectionHome(:props='props.acf.section_1')
     RepeaterTabsHome(:props='props.acf.section_1.repeater')
+      
     .pages-home__slider
       .title-box
       .title

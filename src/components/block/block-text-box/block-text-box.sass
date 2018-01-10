@@ -16,7 +16,7 @@
     height: 250px
 
     @media screen and (max-width: $screen-sm)
-      height: 250px
+      height: 100%
 
       .pages-getting &
         text-align: center
@@ -33,6 +33,9 @@
     // @extend .col-sm-offset-1
     background-color: $c9
     height: 100%
+
+    @media screen and (max-width: $screen-sm)
+      padding: rem-calc(32) rem-calc(16)
 
   &__title
     @extend h1
@@ -69,6 +72,10 @@
     position: relative
     top: calc(250px/2)
     transform: translateY(-50%)
+
+    @media screen and (max-width: $screen-sm)
+      top: 0
+      transform: none
 
     &--title
       @extend .col-sm-offset-2

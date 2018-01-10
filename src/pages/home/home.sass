@@ -27,7 +27,12 @@
 
   .hero__title
     @extend %hero-small
+    width: 100%
+    text-align: center
     color: $c7
+
+    @media screen and (max-width: $screen-sm)
+      letter-spacing: 10px
 
   .hero__subtext
     @extend %hero

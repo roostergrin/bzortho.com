@@ -7,6 +7,7 @@ import Hero from 'components/hero/hero'
 import Icon from 'components/icon/icon'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
 import CustomInvisalignSection from 'components/custom/custom-invisalign-section/custom-invisalign-section'
+import CustomInvisalignTeen from 'components/custom/custom-invisalign-teen/custom-invisalign-teen'
 
 export default {
   name: 'get-started',
@@ -27,7 +28,8 @@ export default {
     Icon,
     NavTrigger,
     CustomInvisalignSection,
-    BackgroundLogo
+    BackgroundLogo,
+    CustomInvisalignTeen
   }
 }
 </script>

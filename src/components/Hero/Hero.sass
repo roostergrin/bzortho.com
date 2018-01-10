@@ -11,6 +11,13 @@
       height: rem-calc(400)
 
   &__text-box
+    .pages-home &
+      left: 0
+      background-color: $c12
+      padding: rem-calc(32)
+
+      @media screen and (max-width: $screen-sm)
+        padding: 0
 
     @media screen and (max-width: $screen-sm)
       top: 0
@@ -36,23 +43,21 @@
       position: absolute
       top: 60%
       left: 50%
-      transform: translateX(-50%)
       text-transform: uppercase
       color: $c8
 
       @media screen and (max-width: $screen-sm)
         top: 0
         left: 0
-        transform: none
         margin: 0
 
   &__title
+    @extend %hero
 
     @media screen and (max-width: $screen-sm)
       position: absolute
       top: 40%
       transform: translateY(-50%)
-      width: 100%
       font-size: 1.5rem
 
     .pages-getting &
@@ -69,6 +74,12 @@
         transform: translateY(-50%)
         width: 100%
         font-size: 1.5rem
+
+    .pages-about-us &, .pages-invisalign &, .pages-treatments &, .pages-wild-smiles &
+      @extend h1
+      top: 70%
+      left: 50%
+      transform: translateX(-50%)
 
   &__subtext
 

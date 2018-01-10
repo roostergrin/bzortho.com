@@ -70,6 +70,9 @@
     padding-bottom: 2rem
     padding-left: 1.3em
 
+    @media screen and (max-width: $screen-lg)
+      padding-left: .5em
+
     a
       display: block
       float: left
@@ -95,10 +98,6 @@
     &:last-child
       display: none
 
-    @media (max-width: 1100px)
-      padding: 2rem .75rem
-
-
   &__phone
     position: relative
     float: left
@@ -118,18 +117,19 @@
       transform: translateY(-40%)
       padding-left: 6px
 
+      @media screen and (max-width: $screen-lg)
+        display: none
+
     .icon-container
       display: inline-block
       width: 2rem
       font-size: 0
+
       &:hover
         .phone
           stroke: $c7
         .background
           fill: $c8
-
-    @media (max-width: 1100px)
-      padding: 2rem .75rem
 
   &__appointment
     float: left
