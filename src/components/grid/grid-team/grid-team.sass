@@ -1,0 +1,43 @@
+.grid-team
+  &__title
+    @extend h2
+    margin: rem-calc(64) auto
+    text-align: center
+    text-transform: uppercase
+
+  &__image
+    background-position: center center
+    background-size: cover
+    width: 250px
+    height: 250px
+
+    &:hover
+      cursor: pointer
+
+  &__tile
+    @extend .col-sm-4
+    margin-bottom: rem-calc(32)
+
+    &:nth-child(1)
+      @extend .col-sm-offset-1
+
+    &:nth-child(5)
+      @extend .col-sm-offset-1
+
+    &:nth-child(9)
+      @extend .col-sm-offset-1
+
+  &__textarea
+    position: absolute
+    bottom: 0
+    background-color: $c11
+    width: 250px
+
+  &__name
+    @extend h3
+    text-align: center
+    text-transform: uppercase
+
+  &__position
+    @extend h4
+    text-align: center

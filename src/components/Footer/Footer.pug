@@ -22,4 +22,5 @@
       .footer__map
         iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.9869232036203!2d-75.2828714483141!3d40.231592979285885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6a3b9963f310f%3A0x365a716c916c5dbd!2sBeckett-Zebrick+Orthodontics!5e0!3m2!1sen!2sus!4v1515434081568' width='100%' height='200' frameborder="0" style="border:0" allowfullscreen)
   
-  .footer__rooster(v-html='props.acf.app.footer.rooster')
+  div(v-if='props')
+    .footer__rooster(v-html='props.acf.app.footer.rooster')
