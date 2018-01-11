@@ -13,7 +13,7 @@ export default {
   name: 'WildSmiles',
   computed: {
     props () {
-      return this.$store.state.pages.wildsmiles
+      return this.$store.state.pages['wild-smiles']
     },
     loading () {
       return this.$store.state.loading
