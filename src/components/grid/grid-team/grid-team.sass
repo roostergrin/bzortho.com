@@ -1,4 +1,6 @@
 .grid-team
+  $tile-width: 250px
+
   &__title
     @extend h2
     margin: rem-calc(64) auto
@@ -8,7 +10,7 @@
   &__image
     background-position: center center
     background-size: cover
-    width: 250px
+    width: $tile-width
     height: 250px
 
     &:hover
@@ -31,7 +33,7 @@
     position: absolute
     bottom: 0
     background-color: $c11
-    width: 250px
+    width: $tile-width
 
   &__name
     @extend h3
@@ -41,3 +43,6 @@
   &__position
     @extend h4
     text-align: center
+
+  &__bio-container
+    width: $tile-width  

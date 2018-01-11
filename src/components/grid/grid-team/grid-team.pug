@@ -4,11 +4,13 @@
       | {{ props.title }}
     .grid-team__tiles
       .grid-team__tile(v-for='(tile, i) in props.members')
-        .grid-team__image.grid-team__image--1(:style="{backgroundImage: 'url('+ tile.photo_1 +')'}", v-on:mouseover='mouseOver(i)', v-show='active !== i')
-        .grid-team__image.grid-team__image--2(:style="{backgroundImage: 'url('+ tile.photo_2 +')'}", v-show='active === i')        
+        .grid-team__image.grid-team__image--1(:style="{backgroundImage: 'url('+ tile.photo_1 +')'}", @mouseover='mouseOver(i)', v-show='active !== i')
+        .grid-team__image.grid-team__image--2(:style="{backgroundImage: 'url('+ tile.photo_2 +')'}", v-show='active === i', @click='modalShow(tile)')        
           .grid-team__textarea(:class="{'grid-team__textarea--active': active === i}")
             .grid-team__name
               | {{ tile.name }}
             .grid-team__position
               | {{ tile.position }}
+              
+  ModalTeamBio(:props='modal', v-show='show', @close='show = false') 
         
