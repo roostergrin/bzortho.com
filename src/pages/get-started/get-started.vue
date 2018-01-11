@@ -16,7 +16,7 @@ export default {
   name: 'get-started',
   computed: {
     props () {
-      return this.$store.state.pages.getstarted
+      return this.$store.state.pages['get-started']
     },
     loading () {
       return this.$store.state.loading
