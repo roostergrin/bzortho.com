@@ -2,10 +2,11 @@
   .repeaters-tabs-home__container
     .repeaters-tabs-home__body
       .repeaters-tabs-home__cards
-        .repeaters-tabs-home__card(v-for='i in props')
-          .repeaters-tabs-home__icon
-            object(:data='i.icon' type='image/svg+xml')
+        .repeaters-tabs-home__card(v-for='(icon, i) in props')
+          .repeaters-tabs-home__icon(@click='activate(i)')
+            object(:data='icon.icon' type='image/svg+xml')
           .repeaters-tabs-home__title
-            | {{ i.title }}
-          .repeaters-tabs-home__content
-            | {{ i.body }}
+            | {{ icon.title }}
+  .repeaters-tabs-home__container
+    .repeaters-tabs-home__box(v-for='(text, j) in props', :class="{ 'repeaters-tabs-home__box--active': active === j }")
+      | {{ text.body }}

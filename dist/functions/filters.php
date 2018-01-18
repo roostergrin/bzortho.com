@@ -25,3 +25,10 @@ function cc_mime_types($mimes) {
 function set_content_type($content_type){
   return 'text/html';
 }
+
+// Rest API CACHE
+add_action( 'save_post', function( $post_id ) {
+  if ( class_exists( 'WP_REST_Cache' ) ) {
+    WP_REST_Cache::empty_cache();
+  }
+});

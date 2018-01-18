@@ -8,8 +8,11 @@
       @extend .col-sm-offset-1
 
   &__card
-    @extend .col-sm-4
+    @extend .col-sm-3
     text-align: center
+
+    &:first-child
+      @extend .col-sm-offset-1
 
     @media screen and (max-width: $screen-sm)
       padding: 2rem 0
@@ -24,6 +27,9 @@
     width: 94px
     height: 94px
 
+    &:hover
+      cursor: pointer
+
   &__title
     @extend h4
     margin-bottom: rem-calc(24)
@@ -32,5 +38,18 @@
     text-transform: uppercase
     color: $c7
 
-  &__content
+  &__box
+    @extend .col-sm-10
+    @extend .col-sm-offset-4
     @extend %p1
+    transition: all .3s ease-in-out
+    opacity: 0
+    padding: 0 rem-calc(32)
+    height: 0
+
+    &--active
+      opacity: 1
+      border: 2px solid $c5
+      border-radius: 1px
+      padding: rem-calc(32)
+      height: auto

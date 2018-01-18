@@ -12,10 +12,10 @@
             
         .nav__misc
           .nav__phone
-            .nav__phone-contents
-              a(href="tel:+15106888465")
+            .nav__phone-contents(v-if='phone && phoneNum')
+              a(:href="phone")
                 Icon(name='phone-icon')
-                span 510.688.8465
+                span {{ phoneNum }}
           .nav__appointment(@click='openModal')
             a(title='Make Appointment')
               | Make Appointment

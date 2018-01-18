@@ -1,6 +1,8 @@
 .custom-invisalign-teen
   .custom-invisalign-teen__container
     .custom-invisalign-teen__body
-      .custom-invisalign-teen__content(v-html='props.content')
-    
+      .custom-invisalign-teen__section-title(v-html='props.title')
+      .custom-invisalign-teen__section(v-for='(section, i) in props.sections')  
+        .custom-invisalign-teen__title(v-html='section.title', @click='activate(i)')
+        .custom-invisalign-teen__content(v-html='section.content', v-show='active === i')
     .custom-invisalign-teen__image(:style="{backgroundImage: 'url('+ props.image +')'}")

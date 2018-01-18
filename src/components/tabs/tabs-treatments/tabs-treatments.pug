@@ -1,7 +1,7 @@
 .tabs-treatments
   .tabs-treatments__container
     .tabs-treatments__title
-      | Types of Braces
+      | {{ props.title }}
     .tabs-treatments__tabs(:style="{backgroundImage: 'url('+ props.background +')'}")
       .tabs-treatments__titles(v-for='(title, i) in props.tab', v-html='title.title', @click='change(i)', :class="{'tabs-treatments__titles--active': active === i, 'tabs-treatments__titles--border': i === 1}")
       .tabs-treatments__tab(v-for='(body, i) in props.tab', v-html='body.content', :class="{'tabs-treatments__tab--active': active === i}")

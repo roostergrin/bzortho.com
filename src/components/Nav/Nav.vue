@@ -20,6 +20,14 @@ export default {
         scrolled: this.$store.state.nav === 1,
         reset: this.$store.state.nav === 2
       }
+    },
+    phone () {
+      const reg = /\d+/g
+      let phone = this.$store.state.pages.app.acf.app.footer.phone
+      return 'tel:+1' + phone.match(reg).join('')
+    },
+    phoneNum () {
+      return this.$store.state.pages.app.acf.app.footer.phone
     }
   },
   methods: {

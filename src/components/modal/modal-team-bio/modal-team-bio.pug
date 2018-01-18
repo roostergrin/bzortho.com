@@ -4,7 +4,7 @@
       .modal-team-bio__close(@click="$emit('close')")
         Icon(name='close')
       .modal-team-bio__image-container  
-        .modal-team-bio__image(:style="{backgroundImage: 'url('+ props.photo_2 +')'}")
+        .modal-team-bio__image(:style="{backgroundImage: 'url('+ props.photo_1 +')'}")
       .modal-team-bio__name(v-html='props.name')
       .modal-team-bio__position(v-html='props.position')
       .modal-team-bio__bio(v-html='props.bio')

@@ -4,6 +4,11 @@
       .custom-invisalign-section__image-bg
         .custom-invisalign-section__image(:style="{ backgroundImage: 'url('+ props.image +')' }")
         .custom-invisalign-section__image-text(v-html='props.image_text')
-      .custom-invisalign-section__textarea(v-html='props.content')
+      .custom-invisalign-section__textarea
+        .custom-invisalign-section__section-title(v-html='props.title')
+        .custom-invisalign-section__content(v-for='(section, i) in props.sections')
+          .custom-invisalign-section__title(v-html='section.title', @click='activate(i)')
+          .custom-invisalign-section__content(v-html='section.content', v-show='active === i')
+            
         
   

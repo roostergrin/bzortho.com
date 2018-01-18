@@ -25,20 +25,23 @@
   &__textarea
     @extend .col-sm-8
     @extend .col-sm-offset-2
-    @extend %p2
 
-    h2
-      margin-bottom: rem-calc(16)
-      text-transform: uppercase
-      letter-spacing: 2px
-      color: $c2
-      font-weight: 600
+  &__section-title
+    @extend h2
+    margin-bottom: rem-calc(16)
+    text-transform: uppercase
+    letter-spacing: 2px
+    color: $c2
+    font-weight: 600
 
-    h4
-      margin-top: 0
-      text-transform: uppercase
-      letter-spacing: rem-calc(2)
+  &__title
+    @extend h4
+    margin: rem-calc(16) 0
+    text-transform: uppercase
+    letter-spacing: rem-calc(2)
 
-    p
-      @extend %p1
-      margin-bottom: rem-calc(46)
+    &:hover
+      cursor: pointer
+
+  &__content
+    @extend %p1
