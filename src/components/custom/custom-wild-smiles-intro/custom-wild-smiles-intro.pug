@@ -3,5 +3,5 @@
     .custom-wild-smiles-intro__textarea
       .custom-wild-smiles-intro__title
         | {{ props.title }}
-      .custom-wild-smiles-intro__content
-        | {{ props.content }}  
+      .custom-wild-smiles-intro__content(v-html='props.content')
+        
