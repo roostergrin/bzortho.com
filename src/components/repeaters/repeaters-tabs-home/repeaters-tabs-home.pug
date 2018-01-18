@@ -7,6 +7,9 @@
             object(:data='icon.icon' type='image/svg+xml')
           .repeaters-tabs-home__title
             | {{ icon.title }}
-  .repeaters-tabs-home__container
-    .repeaters-tabs-home__box(v-for='(text, j) in props', :class="{ 'repeaters-tabs-home__box--active': active === j }")
+
+  .repeaters-tabs-home__box(v-for='(text, j) in props', v-show='active === j')
+    .repeaters-tabs-home__modal
+      .repeaters-tabs-home__close(@click='active = ""')
+        Icon(name='close')
       | {{ text.body }}

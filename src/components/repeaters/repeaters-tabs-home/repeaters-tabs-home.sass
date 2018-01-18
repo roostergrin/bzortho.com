@@ -39,17 +39,35 @@
     color: $c7
 
   &__box
+    @extend %p1
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 9999
+    background-color: $c12
+    padding: 0 rem-calc(32)
+    width: 100%
+    height: 100%
+
+  &__modal
     @extend .col-sm-10
     @extend .col-sm-offset-4
-    @extend %p1
-    transition: all .3s ease-in-out
-    opacity: 0
-    padding: 0 rem-calc(32)
-    height: 0
+    top: 50%
+    transform: translateY(-50%)
+    background-color: $c9
+    padding: rem-calc(64)
 
-    &--active
-      opacity: 1
-      border: 2px solid $c5
-      border-radius: 1px
-      padding: rem-calc(32)
-      height: auto
+  &__close
+    position: absolute
+    top: 10px
+    right: 10px
+
+    svg
+      width: 40px
+      height: 40px
+
+      .x
+        stroke: $c7
+
+    &:hover
+      cursor: pointer
