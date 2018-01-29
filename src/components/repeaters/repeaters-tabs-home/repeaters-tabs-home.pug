@@ -2,14 +2,17 @@
   .repeaters-tabs-home__container
     .repeaters-tabs-home__body
       .repeaters-tabs-home__cards
-        .repeaters-tabs-home__card(v-for='(icon, i) in props')
-          .repeaters-tabs-home__icon(@click='activate(i)')
+        .repeaters-tabs-home__card(v-for='(icon, i) in props', @click='activate(i)')
+          .repeaters-tabs-home__icon
             object(:data='icon.icon' type='image/svg+xml')
           .repeaters-tabs-home__title
             | {{ icon.title }}
+          .repeaters-tabs-home__body
+            | {{ icon.body }}
 
   .repeaters-tabs-home__box(v-for='(text, j) in props', v-show='active === j')
     .repeaters-tabs-home__modal
       .repeaters-tabs-home__close(@click='active = ""')
         Icon(name='close')
-      | {{ text.body }}
+      .repeaters-tabs-home__image(:style="{ backgroundImage: 'url('+ text.image +')'}", v-if='text.image')  
+      .repeaters-tabs-home__modal-body(v-html='text.modal')
