@@ -45,14 +45,16 @@
       margin: 0
   &__slider
     @extend .container-fluid
+    margin-top: rem-calc(64)
     padding: 0
     max-width: none
     @media (max-width: $screen-sm)
       padding: 15rem 0 0
     .arrow
       position: absolute
-      bottom: 2.5rem
+      bottom: 4rem
       left: calc(100% * 6 / 18)
+      transform: translateX(-1px)
       border: 1.75rem solid transparent
       border-top-color: $c5
       border-left-color: $c5
@@ -109,7 +111,7 @@
         margin: 0
 
     .slider
-      @extend .col-sm-13
+      @extend .col-sm-10
       @extend .col-sm-offset-4
       border: 2px solid $c5
       height: 20rem
@@ -118,8 +120,8 @@
       .wrap
         @extend .clearfix
       .slider-item
-        @extend .col-sm-14
-        @extend .col-sm-offset-4
+        @extend .col-sm-12
+        @extend .col-sm-offset-5
 
         @media screen and (max-width: $screen-sm)
           height: 90%
@@ -163,3 +165,13 @@
       .icon
         margin: 2rem auto
         width: 7rem
+
+  .slider-image
+    @extend .col-sm-4
+    transform: translate(-16px, -24px)
+    background-position: center center
+    background-size: cover
+    height: 21.5rem
+
+    @media screen and (max-width: $screen-sm)
+      display: none
