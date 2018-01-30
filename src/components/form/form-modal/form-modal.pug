@@ -3,9 +3,15 @@
     .form-modal__success-message(v-if='formSubmitted')
       | Thanks for submitting our form.
       | Someone will reach out to you as soon as possible!
-    form.form-modal__form(@submit.prevent='validateBeforeSubmit', v-if='!formSubmitted')
+    form.form-main__form(action='http://zebrick.rgwplogin.com/#wpcf7-f75-o1' novalidate='novalidate' class='wpcf7-form' method='post')
+      div(style='display: none')
+        input(type='hidden' name='_wpcf7' value='75')
+        input(type='hidden' name='_wpcf7_version' value='4.9')
+        input(type='hidden' name='_wpcf7_locale' value='en_US')
+        input(type='hidden' name='_wpcf7_unit_tag' value='wpcf7-f75-o1')
+        input(type='hidden' name='_wpcf7_container_post' value='0')
       .form-modal__group
-        input.form-modal__input(name='name', v-model='name', :validate="'required|alpha_spaces'", type='text', placeholder='Your Full Name')
+        input.form-modal__input(name='client-name', v-model='name', :validate="'required|alpha_spaces'", type='text', placeholder='Your Full Name')
       .form-modal__group.form-modal__group--checkboxes
         label First Time Patient? 
         input.form-modal__checkbox(name='yes', type='checkbox', value='Yes') 
@@ -13,7 +19,7 @@
         input.form-modal__checkbox(name='no', type='checkbox', value='No') 
         label No
       .form-modal__group
-        input.form-modal__input(name='email', v-model='email', :validate="'required'", type='text', placeholder='Your Email')    
+        input.form-modal__input(name='client-email', v-model='email', :validate="'required'", type='text', placeholder='Your Email')    
       .form-modal__group
         input.form-modal__input(name='phone', v-model='phone', :validate="'required'", type='text', placeholder='Your Phone Number')
       .form-modal__group
