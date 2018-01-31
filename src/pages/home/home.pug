@@ -26,6 +26,7 @@
         | {{ props.acf.section_2.slider_subtitle }}
       .arrow
       Slider(auto=false, indicators='center')
+        SliderBackground
         SliderItem(slot='item' v-for="(index, i) in props.acf.section_2.slider", :key='index')
           .icon
             object(:data='index.icon' type='image/svg+xml')
@@ -37,6 +38,5 @@
           object(:data='props.acf.section_2.btn_left' type='image/svg+xml')
         .button-right(slot='button-right')
           object(:data='props.acf.section_2.btn_right' type='image/svg+xml')
-      //- .slider-image(:style="{ backgroundImage: 'url('+ props.acf.section_2.background +')'}")
-  
+    
     RepeatersHomeImages(:props='props.acf.icon_bar')

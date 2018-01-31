@@ -9,7 +9,8 @@
       return {
         children: [],
         nowItemIndex: 0,
-        timer: 0
+        timer: 0,
+        background: 'https://bzortho.com/wp-content/uploads/office-tour-new-1.jpg'
       }
     },
     props: {
@@ -128,7 +129,6 @@
       this.handleItemChange = throttle(this.updateItems, 100)
       this.jump = debounce(this.jump, this.speed + 100)
       this.children = this.$parent.props
-      console.log(this.content)
     },
     beforeMount () {
       this.handleItemChange()

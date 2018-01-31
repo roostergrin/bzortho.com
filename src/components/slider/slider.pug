@@ -1,4 +1,7 @@
 .slider(:style='{ width: width, height: height }')
+  .background-testimonial(:style="{ backgroundImage: 'url('+ background +')' }")
+    | {{ content }}
+  .overlay
   .items
     slot(name='item')
   .indicators
