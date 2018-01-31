@@ -5,19 +5,25 @@
     .form-survey__content
       | We appreciate you choosing our practice, and we are committed to making sure that your time spent with us is as comfortable and fulfilling as possible. In order to continue providing the kind of care that keeps our patients smiling, we encourage your comments and suggestions about the treatments and personal care you’ve received while visiting our practice.
     .form-survey__form
-      form.form-contact-page__form(@submit.prevent='validateBeforeSubmit', v-if='!formSubmitted')
+      form.form-contact-page__form(action='https://bzortho.com/contact-us/#wpcf7-f651-o1', novalidate='novalidate', class='wpcf7-form', method='post')
+        div(style='display: none')
+          input(type='hidden' name='_wpcf7' value='651')
+          input(type='hidden' name='_wpcf7_version' value='4.9')
+          input(type='hidden' name='_wpcf7_locale' value='en_US')
+          input(type='hidden' name='_wpcf7_unit_tag' value='wpcf7-f651-o1')
+          input(type='hidden' name='_wpcf7_container_post' value='0')
   
         .form-contact-page__group.form-contact-page__group--checkboxes
           h4 How Would You Rate Your Overall Experience?
-          input.form-contact-page__checkbox(name='yes', type='checkbox', value='Good') 
+          input.form-contact-page__checkbox(name='good', type='checkbox', value='Good') 
           label Good
-          input.form-contact-page__checkbox(name='yes', type='checkbox', value='Poor') 
+          input.form-contact-page__checkbox(name='poor', type='checkbox', value='Poor') 
           label Poor
           
           p
-            input.form-contact-page__checkbox(name='yes', type='checkbox', value='Great') 
+            input.form-contact-page__checkbox(name='great', type='checkbox', value='Great') 
             label Great
-            input.form-contact-page__checkbox(name='yes', type='checkbox', value='Average') 
+            input.form-contact-page__checkbox(name='average', type='checkbox', value='Average') 
             label Average
           
         .form-contact-page__group
@@ -40,10 +46,10 @@
           label No        
           
         .form-contact-page__group
-          input.form-contact-page__input(name='name', v-model='name', :validate="'required|alpha_spaces'", type='text', placeholder='Your Full Name')
+          input.form-contact-page__input(name='client-name', v-model='name', :validate="'required|alpha_spaces'", type='text', placeholder='Your Full Name')
             
         .form-contact-page__group
-          input.form-contact-page__input(name='email', v-model='email', :validate="'required'", type='text', placeholder='Your Email') 
+          input.form-contact-page__input(name='client-email', v-model='email', :validate="'required'", type='text', placeholder='Your Email') 
               
         .form-contact-page__group.form-contact-page__group--submit
           input.form-contact-page__submit(name='submit', type='submit', value='SUBMIT SURVEY')  
