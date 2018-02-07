@@ -14,7 +14,7 @@
   &__body
     @extend .col-sm-12
     position: absolute
-    top: 50%
+    top: 44%
     left: 50%
     transform: translate(-50%, -50%)
     background-color: $c8
@@ -59,3 +59,7 @@
     @extend %p1
     margin-top: rem-calc(32)
     margin-bottom: rem-calc(32)
+
+    @media screen and (max-width: $screen-sm)
+      height: 268px
+      overflow-y: scroll
