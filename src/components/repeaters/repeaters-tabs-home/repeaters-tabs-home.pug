@@ -14,7 +14,11 @@
     .repeaters-tabs-home__modal
       .repeaters-tabs-home__close(@click='active = ""')
         Icon(name='close')
+      .repeaters-tabs-home__modal-title(v-if='text.title1')
+        h4 {{ text.title1 }}
       .repeaters-tabs-home__image(:style="{ backgroundImage: 'url('+ text.image +')'}", v-if='text.image')  
       .repeaters-tabs-home__modal-body(v-html='text.modal')
+      .repeaters-tabs-home__modal-title(v-if='text.title2')
+        h4 {{ text.title2 }}
       .repeaters-tabs-home__image(:style="{ backgroundImage: 'url('+ text.second_image +')'}", v-if='text.second_image')
       .repeaters-tabs-home__modal-body(v-html='text.second_modal')        
