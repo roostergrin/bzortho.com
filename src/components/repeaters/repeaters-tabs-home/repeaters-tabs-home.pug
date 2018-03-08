@@ -16,3 +16,5 @@
         Icon(name='close')
       .repeaters-tabs-home__image(:style="{ backgroundImage: 'url('+ text.image +')'}", v-if='text.image')  
       .repeaters-tabs-home__modal-body(v-html='text.modal')
+      .repeaters-tabs-home__image(:style="{ backgroundImage: 'url('+ text.second_image +')'}", v-if='text.second_image')
+      .repeaters-tabs-home__modal-body(v-html='text.second_modal')        
