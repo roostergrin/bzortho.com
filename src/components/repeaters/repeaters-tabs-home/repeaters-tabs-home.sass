@@ -62,6 +62,9 @@
     max-height: 90vh
     overflow: scroll
 
+    @media screen and (max-width: $screen-sm)
+      padding: 1rem
+
   &__image
     background-position: center center
     background-size: cover
@@ -91,3 +94,13 @@
     h4
       margin-top: 0
       font-size: 20px
+
+  &__row
+    display: flex
+
+    @media screen and (max-width: $screen-md)
+      flex-direction: column
+
+  &__flex-box
+    flex: 1
+    margin: 0 .5rem
