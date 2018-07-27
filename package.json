@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "gulp": "gulp",
-    "dev": "gulp & node build/dev-server.js",
-    "start": "gulp & node build/dev-server.js",
+    "dev": "node build/dev-server.js",
+    "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
@@ -18,12 +18,14 @@
     "axios": "^0.16.2",
     "vee-validate": "^2.0.0-rc.6",
     "vue": "^2.3.3",
+    "vue-awesome-swiper": "^3.1.3",
     "vue-cookies": "^1.5.4",
     "vue-parallax-js": "0.0.5",
     "vue-router": "^2.3.1",
     "vue-scrollto": "^2.8.0",
     "vue-waypoint": "^2.5.0",
-    "vuex": "^2.3.1"
+    "vuex": "^2.3.1",
+    "vuex-cache": "^1.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",

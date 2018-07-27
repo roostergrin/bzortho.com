@@ -1,4 +1,6 @@
 export const GET_PAGES = 'GET_PAGES'
+export const GET_BLOG = 'GET_BLOG'
+export const GET_CURRENT_BLOG = 'GET_CURRENT_BLOG'
 export const VIEW_NAV = 'VIEW_NAV'
 export const VIEW_BODY = 'VIEW_BODY'
 export const VIEW_TYPES = 'VIEW_TYPES'

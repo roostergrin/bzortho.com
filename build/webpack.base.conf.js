@@ -65,6 +65,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+		include: [resolve('src'), resolve('test')]
       },
       {
         test: /\.(png|jpe?g|gif)(\?.*)?$/,

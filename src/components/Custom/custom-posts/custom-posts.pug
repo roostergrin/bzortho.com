@@ -1,0 +1,13 @@
+.all-blogs
+  div(v-if='props')
+    .blog-item(v-for='(post, index) in props')
+      .bitem-right
+        img(v-if='post.better_featured_image')(v-bind:src='post.better_featured_image.source_url')
+      .bitem-left
+        h3.blog-title
+          router-link(:to='"/blog-post/" + post.slug') {{post.title.rendered}}
+        span.blog-date
+          router-link(:to='"/blog-post/" + post.slug') {{post.acf.blog_date}}
+        .short-desc
+          p(v-html='post.excerpt.rendered')
+          router-link.read_more(:to='"/blog-post/" + post.slug') Read more

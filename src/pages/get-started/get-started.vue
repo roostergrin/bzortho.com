@@ -11,6 +11,7 @@ import CustomGetStartedSection from 'components/custom/custom-get-started-sectio
 import CustomGetStartedServices from 'components/custom/custom-get-started-services/custom-get-started-services'
 import BlockTextBox from 'components/block/block-text-box/block-text-box'
 import CustomPatientForms from 'components/custom/custom-patient-forms/custom-patient-forms'
+import SliderAboutUsOffice from 'components/slider/slider-about-us-office/slider-about-us-office'
 
 export default {
   name: 'get-started',
@@ -32,7 +33,8 @@ export default {
     CustomPatientForms,
     CustomGetStartedFirstVisit,
     CustomGetStartedSection,
-    BackgroundLogo
+    BackgroundLogo,
+    SliderAboutUsOffice
   }
 }
 </script>

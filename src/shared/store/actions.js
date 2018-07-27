@@ -1,6 +1,6 @@
 import axios from 'axios'
 import api from 'api'
-import { GET_PAGES, VIEW_NAV, VIEW_BODY, VIEW_TYPES, VIEW_SHOWMODAL, VIEW_MODALCONTENT } from './mutation-types'
+import { GET_PAGES, GET_BLOG, VIEW_NAV, VIEW_BODY, VIEW_TYPES, VIEW_SHOWMODAL, VIEW_MODALCONTENT } from './mutation-types'
 
 const actions = {
   GET_PAGES ({ commit }) {
@@ -12,6 +12,20 @@ const actions = {
           {}
         )
         commit(GET_PAGES, data)
+      } catch (e) {
+        console.log(e)
+      }
+    })()
+  },
+  GET_BLOG ({ commit }) {
+    (async () => {
+      try {
+        const response = await axios.get(`${api}/wp/v2/posts?per_page=100`)
+        const data = response.data.reduce(
+          (allData, data) => ({ ...allData, [data.slug]: data }),
+          {}
+        )
+        commit(GET_BLOG, data)
       } catch (e) {
         console.log(e)
       }

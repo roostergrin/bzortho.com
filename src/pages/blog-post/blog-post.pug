@@ -1,0 +1,20 @@
+.pages-about-us
+  Loader(v-if='loading')
+  div(v-if='props')
+    .custom-nav-trigger
+      .hero
+        .hero__backgroundimage(style='background-image: url("https://bzortho.com/wp-content/uploads/patient-forms-img.jpg");')
+          .hero__text-box
+            .hero__title Blog
+            .hero__subtext
+      .vue-waypoint__waypoint(style='float: left; height: 0.1px;')
+      .vue-waypoint__waypoint__collider(data-v-b133cfae='')
+			
+    .blog_lists
+      .container
+        .blog_details
+          h3.blog-title {{props.title.rendered}}
+          span.blog-date {{props.acf.blog_date}}
+          .blog-img
+            img(v-if='props.better_featured_image')(v-bind:src='props.better_featured_image.source_url')
+          .blog-content(v-html='props.content.rendered')

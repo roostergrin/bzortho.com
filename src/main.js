@@ -4,11 +4,16 @@ import Vue from 'vue'
 import App from './base/app'
 import router from './router'
 import VeeValidate from 'vee-validate'
-import * as customFilters from './shared/filters/filters'
 import store from './shared/store'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+import * as customFilters from './shared/filters/filters'
 // import VueCookies from 'vue-cookies'
 // import VueParallaxJs from 'vue-parallax-js'
 // import VueScrollTo from 'vue-scrollto'
+Vue.use(VueAwesomeSwiper)
+import 'swiper/dist/css/swiper.css'
+
 import VueWaypoint from 'vue-waypoint'
 
 // Vue config
