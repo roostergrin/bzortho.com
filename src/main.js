@@ -12,7 +12,6 @@ import * as customFilters from './shared/filters/filters'
 // import VueParallaxJs from 'vue-parallax-js'
 // import VueScrollTo from 'vue-scrollto'
 Vue.use(VueAwesomeSwiper)
-import 'swiper/dist/css/swiper.css'
 
 import VueWaypoint from 'vue-waypoint'
 
