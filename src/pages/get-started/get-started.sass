@@ -72,7 +72,9 @@
         padding-right: 20%
 
   .slider-about-us-office__slide
-    height: 300px
+    height: 280px
+    background-repeat: no-repeat
+    background-size: 100%
 	
   .slider-about-us-office__title
     color: #00b2c7
@@ -103,6 +105,10 @@
   .slick-dotted.slick-slider
     margin-bottom: 0
 	
+  @media (max-width: 1023px)
+    .block-text-box
+      padding-top: 20px
+	  
   @media (max-width: 767px)
     .slider-about-us-office__title
       font-size: 1.5rem
@@ -110,8 +116,8 @@
       top: -14px
 	  
     .slider-about-us-office__slide
-      height: 260px
+      height: 200px
 	  
   @media (max-width: 479px)
     .slider-about-us-office__slide
-      height: 200px
+      height: 150px
