@@ -33,11 +33,46 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '418925705139293');
     fbq('track', 'PageView');
-  </script> 
+  </script>
   <noscript>
     <img height="1" width="1"
     src="https://www.facebook.com/tr?id=418925705139293&ev=PageView
     &noscript=1"/>
   </noscript>
+
+  <!-- BoldChat Customer Monitor HTML v5.00 (Website=1412 - BZ Orthodontics,ChatButton=1412 - BZ
+  Orthodontics,ChatInvitation=1412 - BZ Orthodontics) -->
+  <script type="text/javascript">
+   window._bcvma = window._bcvma || [];
+   _bcvma.push(["setAccountID", "438176494458224912"]);
+   _bcvma.push(["setParameter", "WebsiteID", "435815585809174575"]);
+   _bcvma.push(["setParameter", "InvitationID", "435815585774398593"]);
+   _bcvma.push(["setParameter", "VisitName", ""]);
+   _bcvma.push(["setParameter", "VisitPhone", ""]);
+   _bcvma.push(["setParameter", "VisitEmail", ""]);
+   _bcvma.push(["setParameter", "VisitRef", ""]);
+   _bcvma.push(["setParameter", "VisitInfo", ""]);
+   _bcvma.push(["setParameter", "CustomUrl", ""]);
+   _bcvma.push(["setParameter", "WindowParameters", ""]);
+   _bcvma.push(["addFloat", {type: "chat", id: "435815590417957445"}]);
+   _bcvma.push(["pageViewed"]);
+   var bcLoad = function(){
+   if(window.bcLoaded) return; window.bcLoaded = true;
+   var vms = document.createElement("script"); vms.type = "text/javascript"; vms.async = true;
+   vms.src = ('https:'==document.location.protocol?'https://':'http://') +
+  "vmss.boldchat.com/aid/438176494458224912/bc.vms4/vms.js";
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vms, s);
+   };
+   if(window.pageViewer && pageViewer.load) pageViewer.load();
+   else if(document.readyState=="complete") bcLoad();
+   else if(window.addEventListener) window.addEventListener('load', bcLoad, false);
+   else window.attachEvent('onload', bcLoad);
+  </script>
+  <noscript>
+  <a href="http://www.boldchat.com" title="Live Chat Software" target="_blank"><img alt="Live Chat Software"
+  src="https://vms.boldchat.com/aid/438176494458224912/bc.vmi?wdid=435815585809174575&amp;vr=&amp;vn=&a
+  mp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
+  </noscript>
+  <!-- /BoldChat Customer Monitor HTML v5.00 -->
 </body>
 </html>
