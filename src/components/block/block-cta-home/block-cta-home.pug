@@ -1,0 +1,14 @@
+.block-cta-home
+  .block-cta-home__bg
+    .block-cta-home__container
+      .left
+        .block-cta-home__intro
+          | {{ props.block_cta_text }}
+          
+        .block-cta-home__sub-intro
+          | {{ props.block_cta_sub_text }}
+      .right
+        a(:href='props.block_cta_button_link')
+          .block-cta-home__button
+            .button
+              | {{ props.block_cta_button_text }}

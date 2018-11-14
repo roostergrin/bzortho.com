@@ -1,0 +1,10 @@
+.block-virtualsmile-demo
+  .block-virtualsmile-demo__container
+    .block-virtualsmile-demo__how-box(v-for='item in props.pictures')
+      .block-virtualsmile-demo__image(:style="{backgroundImage: 'url('+ item.image +')'}")
+      .block-virtualsmile-demo__text
+        .block-virtualsmile-demo__title
+          | {{ item.header }}
+        .block-virtualsmile-demo__body
+          | {{ item.body }}
+      

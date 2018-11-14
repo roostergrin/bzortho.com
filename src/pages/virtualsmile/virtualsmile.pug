@@ -13,4 +13,8 @@
           .block-subheader(slot='subheader')  
             | {{ props.acf.header.sub_title }}
           .block-body(slot='body' v-html='props.acf.header.body')
-            | {{ props.acf.header.body }}  
+            | {{ props.acf.header.body }}
+			
+    BlockCTA(:props='props.acf.block_cta')
+    VirtualSmileExplain(:props='props.acf.block_virtualsmile_explain')
+    VirtualSmileDemo(:props='props.acf.block_virtualsmile_demonstrate')

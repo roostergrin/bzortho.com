@@ -1,0 +1,47 @@
+.block-virtualsmile-demo
+  background: #eee
+  padding: 3em 0
+  text-align: center
+  &__container
+    @extend .container-fluid
+
+  &__how-box
+    display: inline-block
+    padding: 2em
+    width: calc(100% / 3)
+    @media (max-width: $screen-sm-min)
+      width: 100%
+
+  &__image
+    display: inline-flex
+    margin-bottom: 2em
+    background-position: center center
+    background-size: cover
+    width: 100%
+    height: 250px
+
+    @media screen and (max-width: $screen-sm-min)
+      margin: auto
+      width: 100%
+      height: 200px
+  &__text
+    background: #fff
+    padding: 2rem
+    width: 100%
+
+  &__title
+    @extend %p1
+    padding-bottom: .5em
+    text-transform: uppercase
+    color: #713a85
+    line-height: 1.333
+    font-size: 1.125rem
+
+  &__body
+    @extend %p2
+    padding: 0 3em
+    line-height: 1.2
+    letter-spacing: .03em
+    color: #202020
+    font-size: 1rem
+    font-weight: 200

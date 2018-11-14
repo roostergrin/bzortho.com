@@ -1,0 +1,46 @@
+.block-cta-home
+  &__bg
+    background-color: $c2
+    padding: 2em 0
+
+  &__container
+    @extend .container-fluid
+    color: $c4
+
+    .left
+      @extend .col-sm-10
+
+    .right
+      @extend .col-sm-2
+
+  &__intro
+    @extend %p1
+    margin-bottom: .5em
+    letter-spacing: 1px
+    font-weight: 100
+    color: #fff
+    line-height: 1.333
+    font-size: 1.125rem
+
+  &__sub-intro
+    @extend %p1
+    text-transform: uppercase
+    letter-spacing: 1px
+    font-weight: 700
+    color: #fff
+    line-height: 1.333
+    font-size: 1.125rem
+
+  .button
+    background-color: #00b2c7
+    padding: .8em 1em
+    text-align: center
+    color: #fff
+    font-weight: 100
+
+@media (min-width: 768px)
+  .block-cta-home__container .left
+    width: 83.33333%
+  .block-cta-home__container .right
+    width: 16.66667%
+	
