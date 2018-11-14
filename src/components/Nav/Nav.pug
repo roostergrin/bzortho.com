@@ -7,7 +7,7 @@
             
       .nav__links
         .nav__link(v-for='link in links')
-          router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home" && link.name != "BlogPost"', :title='link.name')
+          router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home" && link.name != "BlogPost" && link.name != "Virtualsmile"', :title='link.name')
             | {{ link.name }}
             
         .nav__misc

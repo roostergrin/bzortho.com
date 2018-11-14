@@ -1,0 +1,16 @@
+.pages-virtualsmile
+  Loader(v-if='loading')
+  BackgroundLogo  
+  div(v-if='props')
+    NavTrigger
+      Hero(:props='props.acf.hero')
+	  
+    .pages-about-us__section-1
+      .pages-about-us__title
+        BlockBox(v-if='props.acf.header')
+          .block-header(slot='header')
+            | {{ props.acf.header.title }}
+          .block-subheader(slot='subheader')  
+            | {{ props.acf.header.sub_title }}
+          .block-body(slot='body' v-html='props.acf.header.body')
+            | {{ props.acf.header.body }}  

@@ -7,6 +7,7 @@ import Treatments from '@/pages/treatments/treatments'
 import Invisalign from '@/pages/invisalign/invisalign'
 import WildSmiles from '@/pages/wild-smiles/wild-smiles'
 import ContactUs from '@/pages/contact-us/contact-us'
+import Virtualsmile from '@/pages/virtualsmile/virtualsmile'
 import Blog from '@/pages/blog/blog'
 import BlogPost from '@/pages/blog-post/blog-post'
 import PageNotFound from '@/pages/404/404'
@@ -50,6 +51,11 @@ const router = new VueRouter({
       path: '/Contact-us',
       name: 'Contact',
       component: ContactUs
+    },
+    {
+      path: '/virtualsmile',
+      name: 'Virtualsmile',
+      component: Virtualsmile
     },
     {
       path: '/blog',
