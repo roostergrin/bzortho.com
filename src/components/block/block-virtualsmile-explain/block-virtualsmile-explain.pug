@@ -3,4 +3,4 @@
     .block-virtualsmile-explain__title
       | {{ props.title }}
     .block-virtualsmile-explain__body
-      | {{ props.body }}
+      span(v-html='props.body')
