@@ -12,7 +12,7 @@ export default {
   name: 'virtualsmile',
   computed: {
     props () {
-      return this.$store.state.pages['virtualsmile']
+      return this.$store.state.pages['virtual-smile']
     },
     loading () {
       return this.$store.state.loading
