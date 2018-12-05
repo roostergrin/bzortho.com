@@ -54,7 +54,7 @@ const router = new VueRouter({
     },
     {
       path: '/virtual-smile',
-      name: 'Virtualsmile',
+      name: 'Virtual Smile',
       component: Virtualsmile
     },
     {
