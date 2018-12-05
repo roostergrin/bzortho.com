@@ -3,17 +3,17 @@
 import Vue from 'vue'
 import App from './base/app'
 import router from './router'
-import VeeValidate from 'vee-validate'
+// import VeeValidate from 'vee-validate'
 import store from './shared/store'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+import VueWaypoint from 'vue-waypoint'
 
 import * as customFilters from './shared/filters/filters'
 // import VueCookies from 'vue-cookies'
 // import VueParallaxJs from 'vue-parallax-js'
 // import VueScrollTo from 'vue-scrollto'
 Vue.use(VueAwesomeSwiper)
-
-import VueWaypoint from 'vue-waypoint'
 
 // Vue config
 Vue.config.productionTip = false
@@ -24,7 +24,7 @@ Object.keys(customFilters).forEach(key => {
 })
 
 // Vue use
-Vue.use(VeeValidate)
+// Vue.use(VeeValidate)
 // Vue.use(VueScrollTo, {
 //   container: 'body',
 //   duration: 500,

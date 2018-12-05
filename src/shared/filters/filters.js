@@ -4,8 +4,7 @@ export function relativePath (value) {
 }
 
 export function formatPhone (value) {
-  return value.replace(/[^0-9]/g, '')
-              .replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
+  return value.replace(/[^0-9]/g, '').replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
 }
 
 // Refactor to handle html string
