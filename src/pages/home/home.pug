@@ -27,7 +27,7 @@
       .arrow
       Slider(auto=false, indicators='center')
         SliderBackground
-        SliderItem(slot='item' v-for="(index, i) in props.acf.section_2.slider", :key='index')
+        SliderItem(slot='item' v-for="(index, i) in props.acf.section_2.slider", :key='i')
           .icon
             object(:data='index.icon' type='image/svg+xml')
           .body

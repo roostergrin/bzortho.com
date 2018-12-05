@@ -39,7 +39,6 @@
 
   &__links
     float: right
-    padding-right: rem-calc(16)
 
   &__misc
     float: left
@@ -95,8 +94,14 @@
         color: $c7
         font-weight: 700
     &:first-child,
-    &:last-child
+    &:nth-child(10)
       display: none
+
+  &__dropdown
+    background: $c8
+
+  &__drop-link
+    display: block
 
   &__phone
     position: relative
@@ -133,7 +138,7 @@
 
   &__appointment
     float: left
-    padding: 2rem .75rem
+    padding: 2rem .25rem
     a
       display: block
       float: left

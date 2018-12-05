@@ -25,48 +25,57 @@ const router = new VueRouter({
     {
       path: '/about-us',
       name: 'About Us',
-      component: AboutUs
+      component: AboutUs,
+      navigation: true
     },
     {
       path: '/get-started',
       name: 'Getting Started',
-      component: GetStarted
+      component: GetStarted,
+      navigation: true
     },
     {
       path: '/treatments',
       name: 'Treatments',
-      component: Treatments
+      component: Treatments,
+      navigation: true,
+      hasDrop: true
     },
     {
       path: '/invisalign',
       name: 'Invisalign',
-      component: Invisalign
+      component: Invisalign,
+      navigation: true
     },
     {
       path: '/wild-smiles',
       name: 'Wild Smiles',
-      component: WildSmiles
+      component: WildSmiles,
+      parent: 'Treatments'
     },
     {
       path: '/Contact-us',
       name: 'Contact',
-      component: ContactUs
+      component: ContactUs,
+      navigation: true
     },
     {
       path: '/virtual-smile',
-      name: 'Virtualsmile',
-      component: Virtualsmile
+      name: 'Virtual Smile',
+      component: Virtualsmile,
+      navigation: true
+
     },
     {
       path: '/blog',
       name: 'Blog',
-      component: Blog
+      component: Blog,
+      navigation: true
     },
     {
       path: '/blog-post/:id',
       name: 'BlogPost',
       component: BlogPost,
-      navigation: false,
       props: {}
     },
     {

@@ -16,5 +16,5 @@
           h3.blog-title {{props.title.rendered}}
           span.blog-date {{props.acf.blog_date}}
           .blog-img
-            img(v-if='props.better_featured_image')(v-bind:src='props.better_featured_image.source_url')
+            img(v-if='props.better_featured_image' v-bind:src='props.better_featured_image.source_url')
           .blog-content(v-html='props.content.rendered')

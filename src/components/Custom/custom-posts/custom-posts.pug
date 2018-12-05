@@ -2,7 +2,7 @@
   div(v-if='props')
     .blog-item(v-for='(post, index) in props')
       .bitem-right
-        img(v-if='post.better_featured_image')(v-bind:src='post.better_featured_image.source_url')
+        img(v-if='post.better_featured_image', :src='post.better_featured_image.source_url')
       .bitem-left
         h3.blog-title
           router-link(:to='"/blog-post/" + post.slug') {{post.title.rendered}}
