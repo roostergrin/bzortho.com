@@ -10,7 +10,6 @@ import ContactUs from '@/pages/contact-us/contact-us'
 import Virtualsmile from '@/pages/virtualsmile/virtualsmile'
 import Blog from '@/pages/blog/blog'
 import BlogPost from '@/pages/blog-post/blog-post'
-import PageNotFound from '@/pages/404/404'
 
 Vue.use(VueRouter)
 
@@ -71,8 +70,8 @@ const router = new VueRouter({
     },
     {
       path: '/*',
-      name: 'page-not-found',
-      component: PageNotFound
+      name: 'Redirect',
+      component: Home
     }
   ]
 })
