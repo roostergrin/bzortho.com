@@ -14,3 +14,6 @@
       .nav-mobile__link(v-for='link in links' @click='toggle')
         router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name !== "BlogPost" && link.name !== "Thank"')
           a {{ link.name }}
+      .nav-mobile__phone-content
+        .nav-mobile__phone-text Call or Text Us Today!
+        a(href="tel:+12158557717") 215.855.7717
