@@ -1,9 +1,5 @@
 .custom-contact-intro
   .custom-contact-intro__container
-    .custom-contact-intro__title
-      | Contact
-    .custom-contact-intro__body
-      p
-        | The first step toward achieving a beautiful, healthy smile is to schedule an appointment. To schedule an appointment, please complete and submit the request form below. Our scheduling coordinator will contact you soon to confirm your appointment.
-      p
-        | Please note this form is for requesting an appointment. If you need to cancel or reschedule an existing appointment, or if you require immediate attention, please contact our practice directly.  
+    //- pre {{ props }}
+    .custom-contact-intro__title(v-html='props.title')
+    .custom-contact-intro__body(v-html='props.intro')
