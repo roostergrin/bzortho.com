@@ -5,7 +5,7 @@
         .nav__logo
           router-link(to='/')
             Icon(name='logo')
-      
+
         .nav__misc
             .nav__phone
               .nav__phone-contents
@@ -16,20 +16,20 @@
             .nav__appointment(@click='openModal')
               a(title='Make Appointment')
                 | Make Appointment
-      .nav_bott  
+      .nav_bott
         .nav__links
-          .nav__link(v-for='link in links')
-            router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home" && link.name != "BlogPost"', :title='link.name')
+          .nav__link(v-for='(link, i ) in links', :key="i")
+            router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home" && link.name != "BlogPost" && link.name !== "Redirect" ', :title='link.name')
               | {{ link.name }}
-			
+
           .nav__login(@click='openLogin')
               a(title='Log In', :class='{ open: isOpen }')
                 | Log In
               .nav__chevron(:class='{ open: isOpen }')
               .nav__login-container(:class='{ open: isOpen }')
                 //- .nav__log-link-2
-                  a(href="https://zebrick.cloud9ortho.com/portal/LoginAccount/Login" title='As Doctor') 
+                  a(href="https://zebrick.cloud9ortho.com/portal/LoginAccount/Login" title='As Doctor')
                     | As Doctor
                 .nav__log-link-1
-                  a(href="https://zebrick.cloud9ortho.com/portal/LoginAccount/Login" target="_blank" title='As Patient') 
+                  a(href="https://zebrick.cloud9ortho.com/portal/LoginAccount/Login" target="_blank" title='As Patient')
                     | As Patient
