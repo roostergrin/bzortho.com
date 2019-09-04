@@ -1,7 +1,7 @@
-const route = '//bzortho.com/wp-json'
+const route = 'https://bzortho.com/wp-json'
 
 const api = () => {
-  return document.location.hostname === 'localhost' ? 'https://' + route : 'https://' + route
+  return route
 }
 
 export default api()
