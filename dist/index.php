@@ -74,15 +74,6 @@
   mp;vi=&amp;ve=&amp;vp=&amp;curl=" border="0" width="1" height="1" /></a>
   </noscript>
   <!-- /BoldChat Customer Monitor HTML v5.00 -->
-
-  <!-- Add the below commented out script when bzortho has their data ready to complete the widget -->
-
-  <!-- <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script>
-    <script type="text/javascript">
-      OpenChair.init({
-        token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL2J6b3J0aG8uY29tLyIsInByYWN0aWNlX2lkIjoiMzc4In0.KoyK-3CYc58yH895-6On4Vm9j9zHWqQpZL7kYbaFE9o",
-        mainButtonLeft: true,
-      })
-    </script> -->
+  <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script> <script type="text/javascript"> OpenChair.init({ token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL2J6b3J0aG8uY29tIiwicHJhY3RpY2VfaWQiOiIzNzgifQ.NGrMfo14CUOXdY14kQWir_AbFWtErWZbjbCTA91eP3s", hideMainButton: true, }) </script>
 </body>
 </html>
