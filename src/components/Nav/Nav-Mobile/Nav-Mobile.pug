@@ -2,8 +2,9 @@
   .nav-mobile__container
     .nav-mobile__logo
       Icon(name='logo')
-      a.openchair-widget(class='nav-mobile__schedule-link' title='Make Appointment')
-        Icon.nav-mobile__schedule-icon(name='calendar-icon')
+      .nav-mobile__schedule-link
+        a.openchair-widget(title='Make Appointment')
+          Icon.nav-mobile__schedule-icon(name='calendar-icon')
       .nav-mobile__hamburger(@click='toggle')
         span
         span
