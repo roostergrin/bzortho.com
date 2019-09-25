@@ -13,10 +13,10 @@
                 a(href="tel:+12158557717")
                   Icon(name='phone-icon')
                   span 215.855.7717
-            .nav__appointment
-              .openchair-widget(title='Make Appointment')
-                Icon.openchair-widget(class="nav__schedule-icon" name='calendar-icon')
-                span.openchair-widget | Make Appointment test
+            .nav__appointment.openchair-widget
+              a(title='Make Appointment')
+                Icon(class="nav__schedule-icon" name='calendar-icon')
+                span | Make Appointment
       .nav_bott
         .nav__links
           .nav__link(v-for='(link, i ) in links', :key="i")
