@@ -141,28 +141,18 @@
           fill: $c8
 
   &__appointment
-    float: left
+    display: flex
+    align-items: center
+    justify-content: flex-start
     padding: .5rem .75rem
-    a
-      display: block
-      float: left
-      cursor: pointer
-      padding: 0 .25rem
-      text-align: center
-      text-decoration: none
-      line-height: 2rem
-      color: $c7
-      font-family: $font-family-sans-serif-option
-      font-weight: 700
-      &:hover
-        font-weight: 700
-      &:after
-        display: block
-        visibility: hidden
-        height: 0
-        overflow: hidden
-        font-weight: bold
-        content: attr(title)
+    color: $c7
+    font-weight: 700
+
+  
+  &__appointment-icon
+    position: relative
+    z-index: -1
+
 
   &__login
     position: relative

@@ -14,9 +14,8 @@
                   Icon(name='phone-icon')
                   span 215.855.7717
             .nav__appointment.openchair-widget
-              a(title='Make Appointment')
-                Icon(class="nav__schedule-icon" name='calendar-icon')
-                span | Make Appointment
+              Icon.nav__appointment-icon.nav__schedule-icon(name='calendar-icon')
+              | Make Appointment
       .nav_bott
         .nav__links
           .nav__link(v-for='(link, i ) in links', :key="i")
