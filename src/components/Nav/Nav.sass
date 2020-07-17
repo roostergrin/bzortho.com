@@ -42,13 +42,17 @@
     padding-right: rem-calc(16)
 
   &__misc
+    margin-top: .5em
     float: right
+    background: $c6
 
   &__schedule-icon
     width: 30px
     margin-right: 10px
     display: inline-block
     vertical-align: middle
+    transition: all .5s ease
+    fill: $gray-base
 
   &__login-container
     display: none
@@ -118,41 +122,57 @@
     top: calc(50px/2)
 
     transform: translateY(-50%)
-    height: 2rem
+    height: fit-content
+
+    a
+      font-weight: 600
+      color: $gray-base
+
+      &:hover span,
+      &:hover svg
+        color: white
+        fill: white
 
     span
       @extend %p3
       display: inline-block
       position: relative
-      transform: translateY(-40%)
+      transition: all .5s ease
       padding-left: 6px
+      vertical-align: top
 
       @media screen and (max-width: $screen-lg)
         display: none
+
     .icon-container
       display: inline-block
-      width: 2rem
+      width: 1.5rem
       font-size: 0
-
-      &:hover
-        .phone
-          stroke: $c7
-        .background
-          fill: $c8
+     
+      svg
+        transition: all .5s ease
+        fill: $gray-base
 
   &__appointment
     display: flex
     align-items: center
     justify-content: flex-start
     padding: .5rem .75rem
-    color: $c7
+    color: $gray-base
     font-weight: 700
     cursor: pointer
+    transition: all .5s ease
+
+    svg
+      transition: all .5s ease
+
+    &:hover
+      color: white
+    &:hover svg
+      fill: white
   
   &__appointment-icon
     position: relative
-    z-index: -1
-
 
   &__login
     position: relative
