@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="application/javascript" src="https://www.orthocalc.com/ss/photorequest.js?id=EdgCf6TP"></script>
     <?php wp_head(); ?>
+  <!-- Global site tag (gtag.js) - Google Ads: 813734233 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-813734233"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-813734233');
+</script>
+
+<script>
+  gtag('config', 'AW-813734233/_hfuCIjC1dgBENmygoQD', {
+    'phone_conversion_number': '215.855.7717'
+  });
+</script>    
 </head>
 <body>
+<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  if($actual_link=='https://bzortho.com/thank-you/'){ ?>
+<!-- Event snippet for Website_form_conv conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-813734233/370BCLKex9gBENmygoQD'});
+</script>
+
+<?php  } ?> 
+<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  if($actual_link=='https://bzortho.com/thank-you'){ ?>
+<!-- Event snippet for Website_form_conv conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-813734233/370BCLKex9gBENmygoQD'});
+</script>
+<?php  } ?>
+  
   <div id="app"></div>
   <?php wp_footer(); ?>
   <script type="text/javascript">

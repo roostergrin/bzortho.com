@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/pages/home/home'
 import AboutUs from '@/pages/about-us/about-us'
+import ThankYou from '@/pages/thank-you/thank-you'
 import GetStarted from '@/pages/get-started/get-started'
 import Treatments from '@/pages/treatments/treatments'
 import Invisalign from '@/pages/invisalign/invisalign'
@@ -25,6 +26,11 @@ const router = new VueRouter({
       path: '/about-us',
       name: 'About Us',
       component: AboutUs
+    },
+    {
+      path: '/thank-you',
+      name: 'Thank You',
+      component: ThankYou
     },
     {
       path: '/get-started',

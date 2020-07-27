@@ -1,0 +1,14 @@
+.pages-about-us
+  Loader(v-if='loading')
+  BackgroundLogo  
+  div(v-if='props')
+    NavTrigger
+      Hero(:props='props.acf.hero')
+        
+    .pages-about-us__section-1
+      .pages-about-us__title
+        .thankyou_outer
+          .thank_title(v-if='props.title.rendered' v-html='props.title.rendered')
+          .thank_content(v-if='props.content.rendered' v-html='props.content.rendered')
+
+    

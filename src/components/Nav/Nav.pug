@@ -1,4 +1,4 @@
-.nav(:class='classObject')
+eventTrackingnav(:class='classObject')
   .nav__bg
     .nav__container
       .nav_top
@@ -13,7 +13,7 @@
                 a(href="tel:+12158557717")
                   Icon(name='phone')
                   span 215.855.7717
-            .nav__appointment.openchair-widget
+            .nav__appointment.openchair-widget(@click='eventTracking()')
               Icon.nav__appointment-icon.nav__schedule-icon(name='calendar')
               | Free Consultation
       .nav_bott
