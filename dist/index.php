@@ -22,21 +22,6 @@
 </script>    
 </head>
 <body>
-<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-  if($actual_link=='https://bzortho.com/thank-you/'){ ?>
-<!-- Event snippet for Website_form_conv conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-813734233/370BCLKex9gBENmygoQD'});
-</script>
-
-<?php  } ?> 
-<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-  if($actual_link=='https://bzortho.com/thank-you'){ ?>
-<!-- Event snippet for Website_form_conv conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-813734233/370BCLKex9gBENmygoQD'});
-</script>
-<?php  } ?>
   
   <div id="app"></div>
   <?php wp_footer(); ?>
@@ -107,5 +92,22 @@
   </noscript>
   <!-- /BoldChat Customer Monitor HTML v5.00 -->
   <script src="https://onlineschedulingv2.threadcommunication.com" type="text/javascript"></script> <script type="text/javascript"> OpenChair.init({ token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJvcmlnaW4iOiJodHRwczovL2J6b3J0aG8uY29tIiwicHJhY3RpY2VfaWQiOiIzNzgifQ.NGrMfo14CUOXdY14kQWir_AbFWtErWZbjbCTA91eP3s", hideMainButton: true,}) </script>
-</body>
+
+<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  if($actual_link=='https://bzortho.com/thank-you/'){ ?>
+<!-- Event snippet for Website_form_conv conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-813734233/HR3DCIuex9gBENmygoQD'});
+</script>
+
+<?php  } ?>	
+<?php $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  if($actual_link=='https://bzortho.com/thank-you'){ ?>
+<!-- Event snippet for Website_form_conv conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-813734233/HR3DCIuex9gBENmygoQD'});
+</script>
+<?php  } ?>
+  
+  </body>
 </html>
