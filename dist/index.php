@@ -57,8 +57,10 @@
     &noscript=1"/>
   </noscript>
 
-  <!-- BoldChat Customer Monitor HTML v5.00 (Website=1412 - BZ Orthodontics,ChatButton=1412 - BZ
-  Orthodontics,ChatInvitation=1412 - BZ Orthodontics) -->
+  <script>window.rubyApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};(function(){var e="f8a7a9d1-cb8b-42a2-a955-213ddcfd9204";var a=false;var t=document.createElement("script");t.async=true;t.type="text/javascript";t.src="https://chatwidget.ruby.com/"+e;document.getElementsByTagName("HEAD").item(0).appendChild(t);t.onreadystatechange=t.onload=function(t){if(!a&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")){if(window.RubyChat)window.RubyChat({c:e});a=true}}})();</script>
+
+  <!-- This is the old chat app that was replaced byt ruby chat above BoldChat Customer Monitor HTML v5.00 (Website=1412 - BZ Orthodontics,ChatButton=1412 - BZ
+  Orthodontics,ChatInvitation=1412 - BZ Orthodontics) 
   <script type="text/javascript">
    window._bcvma = window._bcvma || [];
    _bcvma.push(["setAccountID", "438176494458224912"]);
@@ -84,7 +86,7 @@
    else if(document.readyState=="complete") bcLoad();
    else if(window.addEventListener) window.addEventListener('load', bcLoad, false);
    else window.attachEvent('onload', bcLoad);
-  </script>
+  </script> -->
   <noscript>
   <a href="http://www.boldchat.com" title="Live Chat Software" target="_blank"><img alt="Live Chat Software"
   src="https://vms.boldchat.com/aid/438176494458224912/bc.vmi?wdid=435815585809174575&amp;vr=&amp;vn=&a
