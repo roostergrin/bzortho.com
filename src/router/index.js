@@ -28,11 +28,6 @@ const router = new VueRouter({
       component: AboutUs
     },
     {
-      path: '/thank-you',
-      name: 'Thank You',
-      component: ThankYou
-    },
-    {
       path: '/get-started',
       name: 'Getting Started',
       component: GetStarted
@@ -66,6 +61,12 @@ const router = new VueRouter({
       path: '/blog',
       name: 'Blog',
       component: Blog
+    },
+    {
+      path: '/thank-you',
+      name: 'Thank You',
+      component: ThankYou,
+      navigation: false
     },
     {
       path: '/blog-post/:id',

@@ -19,7 +19,7 @@ eventTrackingnav(:class='classObject')
       .nav_bott
         .nav__links
           .nav__link(v-for='(link, i ) in links', :key="i")
-            router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home" && link.name != "BlogPost" && link.name !== "Redirect" ', :title='link.name')
+            router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name != "home" && link.name != "BlogPost" && link.name != "Thank You" && link.name !== "Redirect" ', :title='link.name')
               | {{ link.name }}
 
           .nav__login(@click='openLogin')
