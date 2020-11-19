@@ -3,7 +3,7 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="application/javascript" src="https://www.orthocalc.com/ss/photorequest.js?id=EdgCf6TP"></script>
+    <!-- <script type="application/javascript" src="https://www.orthocalc.com/ss/photorequest.js?id=EdgCf6TP"></script> -->
     <?php wp_head(); ?>
   <!-- Global site tag (gtag.js) - Google Ads: 813734233 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-813734233"></script>
