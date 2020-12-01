@@ -72,7 +72,8 @@ const router = new VueRouter({
     {
       path: '/*',
       name: 'Redirect',
-      component: Home
+      component: Home,
+      navigation: false
     }
   ]
 })

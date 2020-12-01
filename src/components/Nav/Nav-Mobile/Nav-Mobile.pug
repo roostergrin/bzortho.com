@@ -14,7 +14,7 @@
   .nav-mobile__links(v-bind:class='{ open: isClicked }')
     .nav-mobile__links-container
       .nav-mobile__link(v-for='link in links' @click='toggle')
-        router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name !== "BlogPost" && link.name !== "Thank"')
+        router-link(:to='link.path' v-if='link.name !== "page-not-found" && link.name !== "BlogPost" && link.name !== "Thank You" && link.name !== "Redirect"')
           a {{ link.name }}
       .nav-mobile__phone-content
         .nav-mobile__phone-text Call or Text Us Today!
