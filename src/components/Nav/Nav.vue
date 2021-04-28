@@ -22,9 +22,9 @@ export default {
     },
     classObject () {
       return {
-        start: this.$store.state.nav === false,
-        scrolled: this.$store.state.nav === 1,
-        reset: this.$store.state.nav === 2
+        // start: this.$store.state.nav === false,
+        // scrolled: this.$store.state.nav === 1,
+        // reset: this.$store.state.nav === 2
       }
     }
   },
@@ -37,7 +37,7 @@ export default {
     },
     eventTracking: function () {
       console.log('Event function executed')
-      this.$ga.event('send', 'Consultation', 'Free cosultation', 500)
+      this.$ga.event('send', 'Consultation', 'Free consultation', 500)
     }
   },
   components: {
