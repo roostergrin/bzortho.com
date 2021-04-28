@@ -50,31 +50,31 @@
         @extend h1
         margin: 0
 
-    &__slider
-      @extend .container-fluid
-      margin-top: rem-calc(64)
-      padding: 0
-      max-width: none
-      @media (max-width: $screen-sm)
-        padding: 15rem 0 0
-        
-      .arrow
-        position: absolute
-        bottom: 0
-        left: calc(100% * 6 / 18)
-        transform: translate(-1px, -100%)
-        border: 1.75rem solid transparent
+  &__slider
+    @extend .container-fluid
+    margin-top: rem-calc(64)
+    padding: 0
+    max-width: none
+    @media (max-width: $screen-sm)
+      padding: 15rem 0 0
+      
+    .arrow
+      position: absolute
+      bottom: 0
+      left: calc(100% * 6 / 18)
+      transform: translate(-1px, -100%)
+      border: 1.75rem solid transparent
+      border-top-color: $c5
+      border-left-color: $c5
+      width: 0
+      height: 0
+      @media (max-width: 1280px)
+        border: 1.25rem solid transparent
         border-top-color: $c5
         border-left-color: $c5
-        width: 0
-        height: 0
-        @media (max-width: 1280px)
-          border: 1.25rem solid transparent
-          border-top-color: $c5
-          border-left-color: $c5
 
-        @media screen and (max-width: $screen-sm)
-          display: none
+      @media screen and (max-width: $screen-sm)
+        display: none
 
     .title-box
       @extend .col-xs-18
