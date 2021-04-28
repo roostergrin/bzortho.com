@@ -1,73 +1,80 @@
 .pages-home
   display: block
+
   .hero
     position: relative
     float: left
     width: 100%
     height: 80vh
-  .hero__backgroundimage
-    position: absolute
-    top: 0
-    right: 0
-    left: 0
-    float: left
-    height: 80vh
-  .hero__text-box
-    position: absolute
-    top: 50vh
-    left: 10vh
-    text-transform: uppercase
 
-    @media (max-width: $screen-sm)
+    &__backgroundimage
       position: absolute
-      top: 50%
+      top: 0
+      right: 0
       left: 0
-      transform: translateY(-50%)
-      width: 100%
+      float: left
+      height: 80vh
 
-  .hero__title
-    @extend %hero-small
-    width: 100%
-    text-align: center
-    color: $c7
-
-    @media screen and (max-width: $screen-sm)
-      letter-spacing: 10px
-
-  .hero__subtext
-    @extend %hero
-    color: $c8
-    font-weight: 400
-  &__title
-    .block-text-box__body
-      padding: 0
-    .block-header
-      @extend h1
-      margin: 0
-  &__slider
-    @extend .container-fluid
-    margin-top: rem-calc(64)
-    padding: 0
-    max-width: none
-    @media (max-width: $screen-sm)
-      padding: 15rem 0 0
-    .arrow
+    &__text-box
       position: absolute
-      bottom: 0
-      left: calc(100% * 6 / 18)
-      transform: translate(-1px, -100%)
-      border: 1.75rem solid transparent
-      border-top-color: $c5
-      border-left-color: $c5
-      width: 0
-      height: 0
-      @media (max-width: 1280px)
-        border: 1.25rem solid transparent
-        border-top-color: $c5
-        border-left-color: $c5
+      top: 50vh
+      left: 10vh
+      text-transform: uppercase
+
+      @media (max-width: $screen-sm)
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 100%
+
+    &__title
+      @extend %hero-small
+      width: 100%
+      text-align: center
+      color: $c7
+      letter-spacing: 4px
 
       @media screen and (max-width: $screen-sm)
-        display: none
+        // letter-spacing: 10px
+
+    &__subtext
+      @extend %hero
+      color: $c8
+      font-weight: 400
+
+    &__title
+      .block-text-box__body
+        padding: 0
+      .block-header
+        @extend h1
+        margin: 0
+
+    &__slider
+      @extend .container-fluid
+      margin-top: rem-calc(64)
+      padding: 0
+      max-width: none
+      @media (max-width: $screen-sm)
+        padding: 15rem 0 0
+        
+      .arrow
+        position: absolute
+        bottom: 0
+        left: calc(100% * 6 / 18)
+        transform: translate(-1px, -100%)
+        border: 1.75rem solid transparent
+        border-top-color: $c5
+        border-left-color: $c5
+        width: 0
+        height: 0
+        @media (max-width: 1280px)
+          border: 1.25rem solid transparent
+          border-top-color: $c5
+          border-left-color: $c5
+
+        @media screen and (max-width: $screen-sm)
+          display: none
 
     .title-box
       @extend .col-xs-18
