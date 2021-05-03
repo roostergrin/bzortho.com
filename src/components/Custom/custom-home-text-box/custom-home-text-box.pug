@@ -1,0 +1,13 @@
+.custom-home-text-box
+  .custom-home-text-box__container
+    .custom-home-text-box__col
+      .custom-home-text-box__left
+        .custom-home-text-box__body.custom-home-text-box__body--title
+          .custom-home-text-box__title
+            slot(name='header')
+          .custom-home-text-box__subtitle 
+            slot(name='subheader')
+
+      .custom-home-text-box__right  
+        .custom-home-text-box__body
+          slot(name='body')

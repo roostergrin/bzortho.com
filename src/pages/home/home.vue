@@ -4,7 +4,8 @@
 import Loader from 'components/loader/loader'
 import BackgroundLogo from 'components/custom/custom-background/custom-background'
 import NavTrigger from 'components/nav/custom-nav-trigger/custom-nav-trigger'
-import BlockBox from 'components/block/block-text-box/block-text-box'
+// import BlockBox from 'components/block/block-text-box/block-text-box'
+import HomeTextBox from 'components/custom/custom-home-text-box/custom-home-text-box'
 import BlockSlider from 'components/block/block-slider-container/block-slider-container'
 import CustomSectionHome from 'components/custom/custom-section-home/custom-section-home'
 import RepeaterTabsHome from 'components/repeaters/repeaters-tabs-home/repeaters-tabs-home'
@@ -33,7 +34,8 @@ export default {
     Slider,
     SliderItem,
     NavTrigger,
-    BlockBox,
+    // BlockBox,
+    HomeTextBox,
     BlockSlider,
     Hero,
     CustomSectionHome,
