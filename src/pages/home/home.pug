@@ -18,6 +18,7 @@
 
     CustomSectionHome(:props='props.acf.section_1')
     RepeaterTabsHome(:props='props.acf.section_1.repeater')
+    RepeatersHomeImages(:props='props.acf.icon_bar')
       
     .pages-home__slider
       .title-box
@@ -40,4 +41,4 @@
         .button-right(slot='button-right')
           object(:data='props.acf.section_2.btn_right' type='image/svg+xml')
     
-    RepeatersHomeImages(:props='props.acf.icon_bar')
+    RepeatersHomeImagesBottom(:props='props.acf.icon_bar_2')

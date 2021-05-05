@@ -13,6 +13,7 @@ import Hero from 'components/hero/hero'
 import Slider from 'components/slider/slider'
 import SliderItem from 'components/slider/slider-item'
 import RepeatersHomeImages from 'components/repeaters/repeaters-home-images/repeaters-home-images'
+import RepeatersHomeImagesBottom from 'components/repeaters/repeaters-home-images-bottom/repeaters-home-images-bottom'
 
 export default {
   name: 'home',
@@ -41,6 +42,7 @@ export default {
     CustomSectionHome,
     RepeaterTabsHome,
     RepeatersHomeImages,
+    RepeatersHomeImagesBottom,
     BackgroundLogo
   },
   mounted () {
